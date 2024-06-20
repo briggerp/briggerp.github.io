@@ -1,124 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>MSc Robotics, Systems and Control</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        .course-content {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            border-top: 1px solid #ddd;
-        }
-        .toggle-btn {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 1.1em;
-            background: #f4f4f4;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .toggle-btn:hover {
-            background: #e0e0e0;
-        }
-        .toggle-btn::after {
-            content: '\25B6'; /* Right-pointing arrow */
-            font-size: 1.1em;
-            transition: transform 0.3s;
-        }
-        .toggle-btn.active::after {
-            content: '\25BC'; /* Down-pointing arrow */
-            transform: rotate(90deg);
-        }
-    </style>
-</head>
-<body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-    
-        <!-- Header -->
-        <header id="header">
-            <a href="index.html" class="logo">Me</a>
-        </header>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <ul class="links">
-                <li><a href="index.html">About Me</a></li>
-                <li class="active"><a href="generic.html">Academic Achievements</a></li>
-                <li><a href="elements.html">Professional Experience</a></li>
-            </ul>
-        </nav>
-
-        <!-- Main -->
-        <div id="main">
-        <!-- Featured Post -->
-        <article class="post featured">
-            <header class="major">
-                <h2>MSc Robotics, Systems and Control</h2>
+	<head>
+		<title>MSc Robotics, Systems and Control</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+        <div id="wrapper" class="fade-in">
+        
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">Me</a>
             </header>
-            <section>
-                <p>
-                    I decided to specialize in Robotics, Systems and Control at ETH Zurich for my Master's because of my passion for the field, inspired by my focus project during my Bachelor's. Throughout my degree, I enhanced my programming skills in Python, C++, Matlab, and LabView. I also learned to use optimization libraries such as cvxpy for model-based and data-based controllers and started exploring machine learning with libraries like PyTorch and TensorFlow. Below are the projects I worked on during my Master's degree.
-                    <a href="documents/Masters_Transcript.pdf" target="_blank"> View my Master's transcript</a>
-                </p>
-            </section>
-            <section>
-                <h3>National University of Singapore (NUS)</h3>
-                <p>
-                    I began my Master's degree with an exchange semester at NUS. During my exchange I learned a lot about the culture in South East Asia as I had never been there before. I learned how to bargain at markets and basic Chinese. My were courses were project-oriented giving me valuable experience of applying theory from my Bachelor's as well as the courses. Here is a brief overview of the projects I did in the various courses.
-                </p>
 
-                <button class="toggle-btn">Autonomous Robot Systems</button>
-                <div class="course-content">
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="index.html">About Me</a></li>
+                    <li class="active"><a href="generic.html">Academic Achievements</a></li>
+                    <li><a href="elements.html">Professional Experience</a></li>
+                </ul>
+                <!-- <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitt</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul> -->
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2>MSc Robotics, Systems and Control</h2>
+                    <!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+                </header>
+                <section>
+                    <p>
+                        I decided to specialize in Robotics, Systems and Control at ETH Zurich for my Master's because of my passion for the field, inspired by my focus project during my Bachelor's. Throughout my degree, I enhanced my programming skills in Python, C++, Matlab, and LabView. I also learned to use optimization libraries such as cvxpy for model-based and data-based controllers and started exploring machine learning with libraries like PyTorch and TensorFlow. Below are the projects I worked on during my Master's degree.
+                        <a href="documents/Masters_Transcript.pdf" target="_blank"> View my Master's transcript</a>
+                    </p>
+                </section>
+                <section>
+                    <h3>National University of Singapore (NUS)</h3>
+                    <p>
+                        I began my Master's degree with an exchange semester at NUS. During my exchange I learned a lot about the culture in South East Asia as I had never been there before. I learned how to bargain at markets and basic Chinese. My were courses were project-oriented giving me valuable experience of applying theory from my Bachelor's as well as the courses. Here is a brief overwiew of the projects I did in the various courses.
+                    </p>
+
+                    <h4>
+                        Autonomous Robot Systems
+                    </h4>
                     <p>
                         I completed two group projects in this course. In the first project, we navigated a TurtleBot3 robot through a maze with obstacles using Theta* for path planning and bi-directional motion control. The second project involved programming a drone to track the TurtleBot3 in simulation using an Extended Kalman Filter for state estimation and dynamic path planning. These projects enhanced my Python and Matlab skills, ROS capabilities, and practical application of theoretical concepts. See the project reports here:
                         <a href="documents/EE4308_Report.pdf" target="_blank">Project 1</a>,                       
                         <a href="documents/EE4308_Project2.pdf" target="_blank">Project 2</a>.
                     </p>
-                </div>
+                    <!-- <iframe width="560" height="315" src="images/turtlevideo.MOV" frameborder="0" allowfullscreen></iframe> -->
 
-                <button class="toggle-btn">Adaptive Control Systems</button>
-                <div class="course-content">
+                    <h4>
+                        Adaptive Control Systems
+                    </h4>
                     <p>
                         In the Adaptive Control Systems course, I implemented adaptive and sliding controllers in Matlab to control a simulated DC motor. See my project reports here:
                         <a href="documents/EE5104_CA1.pdf" target="_blank">Project 1</a>,
                         <a href="documents/EE5104_CA2.pdf" target="_blank">Project 2</a>,
                         <a href="documents/EE5104_CA3.pdf" target="_blank">Project 3</a>.
                     </p>
-                </div>
 
-                <button class="toggle-btn">Control Systems Design and Simulation</button>
-                <div class="course-content">
+                    <h4>
+                        Control Systems Design and Simulation
+                    </h4>
                     <p>
                         I learned system identification using various parametric and non-parametric methods. See my project reports for further details:
                         <a href="documents/EE4307_Project1.pdf" target="_blank">Project 1</a>,
                         <a href="documents/EE4307_Project2.pdf" target="_blank">Project 2</a>.
                     </p>
-                </div>
-            </section>
-            <section>
-                <h3>ETH Zurich</h3>
-
-                <button class="toggle-btn">Master Thesis: Data-Driven Control</button>
-                <div class="course-content">
+                </section>
+                <section>
+                    <h3>ETH Zurich</h3>
+                    <h4>Master Thesis: Data-Driven Control</h4>
                     <p>
                         My Master's thesis focused on data selection for Data-EnablEd Predictive Control (DeePC) in urban traffic control. DeePC was shown to reduce traffic congestion and emissions more effectively than traditional MPC controllers. However, it is highly sensitive to the data it uses. My thesis aimed to determine which data should be used under varying traffic conditions to ensure the effectiveness of DeePC. This research is part of the REAL initiative of NCCR Automation, where I regularly present my findings to enhance my presentation skills and learn to convey information concisely to diverse audiences.
-                        <a href="https://www.real-lab.ch/traffic-control" target="_blank">Learn more about the REAL initiative.</a>
+                        <a href="https://www.real-lab.ch/traffic-control" target="_blank">Learn more about the REAL initiative.</a></p>
                     </p>
-                </div>
-
-                <button class="toggle-btn">Semester Project: Imitation Learning</button>
-                <div class="course-content">
+                    <h4>Semester Project: Imitation Learning</h4>
                     <p>
                         For my semester project, I developed a neural network to control a motorized labyrinth game by imitating a Model-Predictive Control (MPC) expert. This imitation learning approach allowed for higher bandwidth control with a similar success rate. Through this project, I gained experience with machine learning libraries such as PyTorch and TensorFlow, and furthered my knowledge of ROS2. 
                         Read my report for more details:  <a href="documents/Semester_Project_Brio_Labyrinth.pdf" target="_blank">Semester project report</a>.
@@ -127,10 +96,8 @@
                         <source src="images/SUCCESS.MOV" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                </div>
 
-                <button class="toggle-btn">Physical Human Robot Interaction</button>
-                <div class="course-content">
+                    <h4>Physical Human Robot Interaction</h4>
                     <p>
                         In the Physical Human Robot Interaction course, I learned about the safety and technical aspects of human-robot interaction, useful sensors, and control methods that influence interaction experiences. For the final project, a colleague and I programmed a virtual wall with a haptic paddle using an admittance controller. This project enhanced my skills in sensor calibration, LabView programming, and practical application of theoretical knowledge.
                     </p>
@@ -138,74 +105,34 @@
                         <source src="images/Virtual_mass_M_10.MOV" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                </div>
 
-                <button class="toggle-btn">Computational Control</button>
-                <div class="course-content">
+                    <h4>Computational Control</h4>
                     <p>
                         The Computational Control course covered various control methods for systems where a simple PID controller is insufficient. I learned about model-based and data-based controllers such as MPC, LQR, and DeePC, as well as learning-based controllers like Q-learning and SARSA. For the final project, I programmed MPC and DeePC controllers to autonomously land a rocket. This project involved using the reinforcement learning API Gym and solving optimization problems with cvxpy.
                         <a href="documents/COCO_Project_2023.pdf" target="_blank">View the rocket project report (PDF)</a>
                     </p>
-                </div>
-
-                <button class="toggle-btn">Path Planning and Decision Making for Autonomous Robots</button>
-                <div class="course-content">
+                    
+                    <h4>Path Planning and Decision Making for Autonomous Robots</h4>
                     <p>
                         In this course, I implemented various algorithms for path planning and decision making in Python. These included Depth-First and Breadth-First graph search, Uniform Cost search, A* search, policy and value iteration for Markov Decision Processes, and Linear Programming for optimization. The final project involved developing a path planning and decision-making pipeline for multiple vehicles on a road network with obstacles. I modeled the car dynamics and used RRT* for path planning, ensuring vehicles avoided collisions.
                     </p>
-                </div>
-                <button class="toggle-btn">Dynamic Programming and Optimal Control</button>
-                <div class="course-content">
-                    <p>
-                        The bellman equation was derived and discussed. This led to the formulation of polica and value iteration. 
-                        <!-- <a href="documents/COCO_Project_2023.pdf" target="_blank">View the rocket project report (PDF)</a> -->
-                    </p>
-                </div>
+                </section>
+                    <!-- INSERT: Video of final project when available -->
+            </article>
 
-                <button class="toggle-btn">Vision Algorithms for Mobile Robotics</button>
-                <div class="course-content">
-                    <p>
-                        I learned about traditional computer vision algorithms and state-of-the-art algorithms for mobile robotics. The exercises were conducted in Matlab.
-                        <!-- <a href="documents/COCO_Project_2023.pdf" target="_blank">View the rocket project report (PDF)</a> -->
-                    </p>
-                </div>    
+            </div>
+            <!-- <footer> -->
+                <!-- <a href="index.html">Back to Home</a> -->
+            <!-- </footer> -->
 
-                <button class="toggle-btn">Recursive Estimation</button>
-                <div class="course-content">
-                    <p>
-                        The (Extended) Kalman Filter was derived theoretically. Particle filtering was also discussed. I implemented both filters in a programming exercise.
-                        <!-- <a href="documents/COCO_Project_2023.pdf" target="_blank">View the rocket project report (PDF)</a> -->
-                    </p>
-                </div>
-            </section>
-        </article>
         </div>
-    </div>
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggleButtons = document.querySelectorAll('.toggle-btn');
-
-            toggleButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const content = this.nextElementSibling;
-                    const isActive = this.classList.toggle('active');
-                    
-                    if (isActive) {
-                        content.style.display = 'block';
-                    } else {
-                        content.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
-</body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
