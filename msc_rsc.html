@@ -10,14 +10,34 @@
         .course-content {
             display: none;
             margin-top: 10px;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .toggle-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1.1em;
+            background: #f4f4f4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .toggle-btn:hover {
+            background: #e0e0e0;
         }
         .toggle-btn::after {
             content: '\25B6'; /* Right-pointing arrow */
             font-size: 1.1em;
-            margin-left: 10px;
+            transition: transform 0.3s;
         }
         .toggle-btn.active::after {
             content: '\25BC'; /* Down-pointing arrow */
+            transform: rotate(90deg);
         }
     </style>
 </head>
@@ -134,6 +154,29 @@
                         In this course, I implemented various algorithms for path planning and decision making in Python. These included Depth-First and Breadth-First graph search, Uniform Cost search, A* search, policy and value iteration for Markov Decision Processes, and Linear Programming for optimization. The final project involved developing a path planning and decision-making pipeline for multiple vehicles on a road network with obstacles. I modeled the car dynamics and used RRT* for path planning, ensuring vehicles avoided collisions.
                     </p>
                 </div>
+                <button class="toggle-btn">Dynamic Programming and Optimal Control</button>
+                <div class="course-content">
+                    <p>
+                        The bellman equation was derived and discussed. This led to the formulation of polica and value iteration. 
+                        <!-- <a href="documents/COCO_Project_2023.pdf" target="_blank">View the rocket project report (PDF)</a> -->
+                    </p>
+                </div>
+
+                <button class="toggle-btn">Vision Algorithms for Mobile Robotics</button>
+                <div class="course-content">
+                    <p>
+                        I learned about traditional computer vision algorithms and state-of-the-art algorithms for mobile robotics. The exercises were conducted in Matlab.
+                        <!-- <a href="documents/COCO_Project_2023.pdf" target="_blank">View the rocket project report (PDF)</a> -->
+                    </p>
+                </div>    
+
+                <button class="toggle-btn">Recursive Estimation</button>
+                <div class="course-content">
+                    <p>
+                        The (Extended) Kalman Filter was derived theoretically. Particle filtering was also discussed. I implemented both filters in a programming exercise.
+                        <!-- <a href="documents/COCO_Project_2023.pdf" target="_blank">View the rocket project report (PDF)</a> -->
+                    </p>
+                </div>
             </section>
         </article>
         </div>
@@ -147,23 +190,18 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const toggleButtons = document.querySelectorAll('.toggle-btn');
-            const contents = document.querySelectorAll('.course-content');
 
-            toggleButtons.forEach((btn, index) => {
-                btn.addEventListener('click', function() {
-                    // Close all contents
-                    contents.forEach(content => content.style.display = 'none');
-                    toggleButtons.forEach(button => button.classList.remove('active'));
-
-                    // Open the clicked one
-                    if (contents[index].style.display === 'none') {
-                        contents[index].style.display = 'block';
-                        btn.classList.add('active');
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    const isActive = this.classList.toggle('active');
+                    
+                    if (isActive) {
+                        content.style.display = 'block';
                     } else {
-                        contents[index].style.display = 'none');
-                        btn.classList.remove('active');
+                        content.style.display = 'none';
                     }
                 });
             });
