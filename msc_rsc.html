@@ -19,8 +19,8 @@
             <!-- Nav -->
             <nav id="nav">
                 <ul class="links">
-                    <li class="active"><a href="index.html">About Me</a></li>
-                    <li><a href="generic.html">Academic Achievements</a></li>
+                    <li><a href="index.html">About Me</a></li>
+                    <li class="active"><a href="generic.html">Academic Achievements</a></li>
                     <li><a href="elements.html">Professional Experience</a></li>
                 </ul>
                 <!-- <ul class="icons">
@@ -33,48 +33,68 @@
 
             <!-- Main -->
             <div id="main">
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="#">MSc Robotics, Systems and Control</a></h2>
+                    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                    <p>
+                        I decided to specialize in Robotics, Systems and Control at ETH Zurich for my Master's because of my passion for the field, inspired by my focus project during my Bachelor's. Throughout my degree, I enhanced my programming skills in Python, C++, Matlab, and LabView. I also learned to use optimization libraries such as cvxpy for model-based and data-based controllers and started exploring machine learning with libraries like PyTorch and TensorFlow. Below are the projects I worked on during my Master's degree.
+                    </p>
+                    
+                    <p><a href="documents/Masters_Transcript.pdf" target="_blank">View my Master's transcript (PDF)</a></p>
+                    
+                    <h3>Exchange Semester at National University of Singapore</h3>
+                    <p>
+                        I began my Master's degree with an exchange semester at the National University of Singapore (NUS). The courses were project-oriented, which significantly improved my practical skills. In the Adaptive Control Systems course, I implemented adaptive and sliding controllers in Matlab to control a simulated DC motor. In the Control Systems Design and Simulation course, I learned system identification using various parametric and non-parametric methods. 
+                    </p>
+                    <p>
+                        In the Autonomous Robot Systems course, I completed two group projects. In the first project, we navigated a TurtleBot3 robot through a maze with obstacles using Theta* for path planning and bi-directional motion control. The second project involved programming a drone to track the TurtleBot3 in simulation using an Extended Kalman Filter for state estimation and dynamic path planning. These projects enhanced my Python and Matlab skills, ROS capabilities, and practical application of theoretical concepts.
+                    </p>
+                    <p>
+                        <a href="documents/EE4307_Assignment.pdf" target="_blank">Project Report 1 (PDF)</a>
+                        <a href="documents/EE4307_Project1.pdf" target="_blank">Project Report 2 (PDF)</a>
+                        <a href="documents/EE4307_Project2.pdf" target="_blank">Project Report 3 (PDF)</a>
+                        <a href="documents/EE4308_Project2.pdf" target="_blank">Project Report 4 (PDF)</a>
+                        <a href="documents/EE4308_Report.pdf" target="_blank">Project Report 5 (PDF)</a>
+                        <a href="documents/EE5104_CA1.pdf" target="_blank">Project Report 6 (PDF)</a>
+                        <a href="documents/EE5104_CA2.pdf" target="_blank">Project Report 7 (PDF)</a>
+                        <a href="documents/EE5104_CA3.pdf" target="_blank">Project Report 8 (PDF)</a>
+                    </p>
+                    <iframe width="560" height="315" src="images/turtlevideo.MOV" frameborder="0" allowfullscreen></iframe>
 
-                <!-- Featured Post -->
-                    <article class="post featured">
-                        <header class="major">
-                            <!-- <span class="date" id="current-date"></span> -->
-                            <h2><a href="#">MSc Robotics, Systems and Control</a></h2>
-                            <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-                            <p>
-                                I decided to specialize in Robotics, Systems and Control for my Masters because of how much fun I had during my focus project and because how fascinating this field is. 
-                                Across my degree, I improved my programming skills, including in python, C++, Matlab and LabView. I learned how to use optimization libraries such as cvxpy to formulate model-based and data-based controllers. I also started to delve into the field of machine learning where I worked with pytorch and tensorflow. In the following, are projects I did during my Master's degree.
-                                
-                                Experiences: Python, C++, LabView, Optimization libraries, Machine Learning, Various control: MPC, DeePC
-
-                                1. Exchange Semester at National University of Singapore
-                                I started my Master's degree with an exchange semester at the National University of Singapore (NUS). Singapore is an exciting country from a cultural and robotics perspective. 
-                                I realized that automation and robotics seems more integrated in society than in Switzerland. Cleaning robots were everywhere to be seen. 
-                                At NUS, I conducted a group project with a tu
-
-                                2. ETH Projects
-                                Master Thesis: Data driven control. Optimization libraries
-
-                                INSERT: ?
-
-                                Semester project: Imitation Learning
-
-                                INSERT: Video and Report
-
-                                PHRI: Virtual wall with haptic paddle. Labview
-                                
-                                INSERT: Video
-
-                                PDM4AR: Autnomous driving coordination. Path planning and decision making. Cvxpy
-
-                                INSERT: Video
-
-                                Recursive Estimation: Kalman Filter
-
-                                INSERT: ?
-                                    
-                            </p>
-                        </header>
-                    </article>
+                    <h3>ETH Projects</h3>
+                    <h4>Master Thesis: Data-Driven Control</h4>
+                    <p>
+                        My Master's thesis focused on data selection for Data-EnablEd Predictive Control (DeePC) in urban traffic control. DeePC was shown to reduce traffic congestion and emissions more effectively than traditional MPC controllers. However, it is highly sensitive to the data it uses. My thesis aimed to determine which data should be used under varying traffic conditions to ensure the effectiveness of DeePC. This research is part of the REAL initiative of NCCR Automation, where I regularly present my findings to enhance my presentation skills and learn to convey information concisely to diverse audiences.
+                    </p>
+                    <p><a href="https://www.real-lab.ch/traffic-control" target="_blank">Learn more about the REAL initiative</a></p>
+                    
+                    <h4>Semester Project: Imitation Learning</h4>
+                    <p>
+                        For my semester project, I developed a neural network to control a motorized labyrinth game by imitating a Model-Predictive Control (MPC) expert. This imitation learning approach allowed for higher bandwidth control with a similar success rate. Through this project, I gained experience with machine learning libraries such as PyTorch and TensorFlow, and furthered my knowledge of ROS2.
+                    </p>
+                    <iframe width="560" height="315" src="images/SUCCESS.MOV" frameborder="0" allowfullscreen></iframe>
+                    
+                    <h4>PHRI: Virtual Wall with Haptic Paddle</h4>
+                    <p>
+                        In the Physical Human Robot Interaction course, I learned about the safety and technical aspects of human-robot interaction, useful sensors, and control methods that influence interaction experiences. For the final project, a colleague and I programmed a virtual wall with a haptic paddle using an admittance controller. This project enhanced my skills in sensor calibration, LabView programming, and practical application of theoretical knowledge.
+                    </p>
+                    <iframe width="560" height="315" src="images/Virtual_mass_M_10.MOV" frameborder="0" allowfullscreen></iframe>
+                    
+                    <h4>Computational Control</h4>
+                    <p>
+                        The Computational Control course covered various control methods for systems where a simple PID controller is insufficient. I learned about model-based and data-based controllers such as MPC, LQR, and DeePC, as well as learning-based controllers like Q-learning and SARSA. For the final project, I programmed MPC and DeePC controllers to autonomously land a rocket. This project involved using the reinforcement learning API Gym and solving optimization problems with cvxpy.
+                    </p>
+                    <p><a href="documents/COCO_Project_2023.pdf" target="_blank">View the rocket project report (PDF)</a></p>
+                    
+                    <h4>PDM4AR: Autonomous Driving Coordination</h4>
+                    <p>
+                        In the Path Planning and Decision Making for Autonomous Robots (PDM4AR) course, I implemented various algorithms for path planning and decision making in Python. These included Depth-First and Breadth-First graph search, Uniform Cost search, A* search, policy and value iteration for Markov Decision Processes, and Linear Programming for optimization. The final project involved developing a path planning and decision-making pipeline for multiple vehicles on a road network with obstacles. I modeled the car dynamics and used RRT* for path planning, ensuring vehicles avoided collisions.
+                    </p>
+                    <!-- INSERT: Video of final project when available -->
+                </header>
+            </article>
 
             </div>
             <!-- <footer> -->
