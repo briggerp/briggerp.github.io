@@ -42,6 +42,10 @@
             margin: 10px 0;
             padding-top: 10px;
         }
+        .left-align-bullets ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -79,22 +83,21 @@
                     <h3>National University of Singapore</h3>
                     <div class="course-separator">
                         <div class="toggle-button" onclick="toggleContent(this)">Autonomous Robot Systems</div>
-                        <div class="toggle-content">
-                            <p> <ul>
+                        <div class="toggle-content left-align-bullets">
+                            <p>
+                                <ul>
                                     <li>Knowledge acquired in: State estimation, control systems theory, path planning and robot dynamics. Programming with python and ROS. </li>
                                     <li>Implemented Theta* path planning, bi-directional motion control and spline trajectory generation in python for TurtleBot3 robot <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
                                     <li>Implemented Extended Kalman Filter, finite state machine logic and PID controller in python for hector drone <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
                                 </ul>
-                                <!-- I completed two group projects in this course. In the first project, we navigated a TurtleBot3 robot through a maze with obstacles using Theta* for path planning and bi-directional motion control. The second project involved programming a drone to track the TurtleBot3 in simulation using an Extended Kalman Filter for state estimation and dynamic path planning. These projects enhanced my Python and Matlab skills, ROS capabilities, and practical application of theoretical concepts. See the project reports here:
-                                <a href="documents/EE4308_Report.pdf" target="_blank">Project 1</a>,                       
-                                <a href="documents/EE4308_Project2.pdf" target="_blank">Project 2</a>. -->
                             </p>
                         </div>
                     </div>
                     <div class="course-separator">
                         <div class="toggle-button" onclick="toggleContent(this)">Adaptive Control Systems</div>
-                        <div class="toggle-content">
-                            <p> <ul>
+                        <div class="toggle-content left-align-bullets">
+                            <p>
+                                <ul>
                                     <li>Knowledge acquired in: Adaptive control systems, </li>
                                     <li>Implemented Theta* path planning, bi-directional motion control and spline trajectory generation in python for TurtleBot3 robot <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
                                     <li>Implemented Extended Kalman Filter, finite state machine logic and PID controller in python for hector drone <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
@@ -108,7 +111,7 @@
                     </div>
                     <div class="course-separator">
                         <div class="toggle-button" onclick="toggleContent(this)">Control Systems Design and Simulation</div>
-                        <div class="toggle-content">
+                        <div class="toggle-content left-align-bullets">
                             <p>
                                 I learned system identification using various parametric and non-parametric methods. See my project reports for further details:
                                 <a href="documents/EE4307_Project1.pdf" target="_blank">Project 1</a>,
@@ -209,7 +212,7 @@
     <script>
         function toggleContent(button) {
             button.classList.toggle('active');
-            var content = button.nextprofessional_experienceibling;
+            var content = button.nextElementSibling;
             if (content.style.display === "block") {
                 content.style.display = "none";
             } else {
