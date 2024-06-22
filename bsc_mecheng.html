@@ -7,6 +7,48 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+    <style>
+        .toggle-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            padding-left: 25px;
+            position: relative;
+        }
+        .toggle-button:before {
+            content: "+";
+            display: inline-block;
+            font-size: 24px;
+            color: #000;
+            position: absolute;
+            left: 0;
+        }
+        .toggle-button.active:before {
+            content: "-";
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .course-separator {
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+            padding-top: 10px;
+        }
+        .left-align-bullets ul {
+            list-style-position: inside;
+            padding-left: 0;
+            text-align: left; /* Ensure the text is left-aligned */
+        }
+    </style>
 	<body class="is-preload">
 		<!-- Wrapper -->
         <div id="wrapper" class="fade-in">
@@ -75,8 +117,7 @@
                                 <p>
                                     I graduated in the top two percentile of my class with a GPA of 5.54. My undergraduate degree at ETH Zurich provided a solid foundation in mathematics, physical concepts, thermodynamics, and fluid dynamics. I also developed research presentation skills and gained an introduction to control theory, programming, and robotics.
                                     During my studies, I learned to document my research in LaTeX and developed proficiency in programming languages such as Matlab, C++, and Python. I also acquired the ability to break down complex, abstract problems into manageable subproblems.
-                                    Below are some of the projects I worked on during my Bachelor's degree as well as my transcript of records. View my Bachelor's
-
+                                    View my Bachelor's
                                     <a href="documents/Academic Record.pdf" target="_blank">transcript</a>,
                                     <a href="documents/Diploma.pdf" target="_blank"> graduation diploma</a> and
                                     <a href="documents/Statistics.pdf" target="_blank"> graduation statistics.</a>
@@ -87,31 +128,43 @@
                                 <p>
                                     In the third year of my Bachelor's, I participated in the Focus Project Griffin. Over the course of a year, our team of eight built an aerial manipulator with a parallel robotic arm from the ground up. This experience was mesmerizing in many ways. We shaped the vision and goals of the project, similar to working for a startup in its earliest stage.
                                     We pitched our project to companies to gather funds and material sponsors, and I enhanced my presentation skills through weekly update meetings with our supervisors. It was amazing to see our drone evolve from a paper sketch to a CAD model to a functional aerial system.
-                                </p>
-                                <p>
                                     As the team lead, I ensured we met our weekly goals and maintained high spirits during challenging times. I worked on modeling the system dynamics, deriving aerodynamic equations for our rotor configuration, and controlling our flying base. We wrote our code in C++ and Python, and used ROS for robot communication. Before testing on the actual hardware, we tested our drone in the Gazebo simulation environment. For the real hardware, I learned how to tune our motor controllers and conduct force-torque measurements. Lastly, I acquired experience with laser cutters, 3D printers, and basic soldering and wiring skills.
                                 </p>
-                                <p>
-                                    After completing the project, we published a conference paper describing our novel mechanical design, which won the Best Paper award at the conference:
-                                    <a href="documents/Best_Paper_Award_Certificate.pdf" target="_blank">View the award certificate</a>
-                                    <a href="https://ieeexplore.ieee.org/document/10156414" target="_blank">View the conference paper</a>
-                                </p>
-                                <p>
-                                    Our aerial manipulator combined an omnidirectional floating base with a parallel robot arm. The coaxial, tiltable propeller groups enabled us to fly in any pose. With our robotic arm, we were able to compensate for positional errors of the floating base and grasp objects with adaptive fingers. The videos below showcase two grasping missions:
-                                </p>
-            
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6QirjDjgCOU" frameborder="0" allowfullscreen></iframe>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-OoUsadBrYI" frameborder="0" allowfullscreen></iframe>
-            
-                                <p>
-                                    At the end of the project, I presented our project at the Focus Rollout together with a colleague:
-                                </p>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/pK2XYTjVoa8" frameborder="0" allowfullscreen></iframe>
-            
-                                <p>
-                                    For my Bachelor's thesis, a project colleague and I developed an object detection and grasp planning pipeline for our aerial manipulator where we used OpenCV to code our perception algorithm.
-                                    <a href="documents/BT_object_detection.pdf" target="_blank">View my Bachelor's thesis.</a>
-                                </p>
+                                <div class="course-separator">
+                                    <div class="toggle-button" onclick="toggleContent(this)">Conference Paper</div>
+                                        <p>
+                                            After completing the project, we published a conference paper describing our novel mechanical design, which won the Best Paper award at the conference:
+                                            <a href="documents/Best_Paper_Award_Certificate.pdf" target="_blank">View the award certificate</a>
+                                            <a href="https://ieeexplore.ieee.org/document/10156414" target="_blank">View the conference paper</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="course-separator">
+                                    <div class="toggle-button" onclick="toggleContent(this)">Aerial Manipulation</div>
+                                        <p>
+                                            Our aerial manipulator combined an omnidirectional floating base with a parallel robot arm. The coaxial, tiltable propeller groups enabled us to fly in any pose. With our robotic arm, we were able to compensate for positional errors of the floating base and grasp objects with adaptive fingers. The videos below showcase two grasping missions:
+                                        </p>
+                    
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6QirjDjgCOU" frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-OoUsadBrYI" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="course-separator">
+                                    <div class="toggle-button" onclick="toggleContent(this)">Focus Rollout</div>
+                                        <p>
+                                            At the end of the project, I presented our project at the Focus Rollout together with a colleague:
+                                        </p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pK2XYTjVoa8" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="course-separator">
+                                    <div class="toggle-button" onclick="toggleContent(this)">Bachelor Thesis</div>
+                                        <p>
+                                            For my Bachelor's thesis, a project colleague and I developed an object detection and grasp planning pipeline for our aerial manipulator where we used OpenCV to code our perception algorithm.
+                                            <a href="documents/BT_object_detection.pdf" target="_blank">View my Bachelor's thesis.</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </section>
                     </article>
 
