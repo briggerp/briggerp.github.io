@@ -96,20 +96,22 @@
                         <div class="toggle-button" onclick="toggleContent(this)">Adaptive Control Systems</div>
                         <div class="toggle-content left-align-bullets">
                             <ul>
-                                <li>Knowledge acquired in: Adaptive control systems, </li>
-                                <li>Implemented Theta* path planning, bi-directional motion control and spline trajectory generation in python for TurtleBot3 robot <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
-                                <li>Implemented Extended Kalman Filter, finite state machine logic and PID controller in python for hector drone <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
+                                <li>Knowledge acquired in: Lyapunov-based direct adaptive control, self-tuning regulator, model reference adaptive control, variable structure control </li>
+                                <li>Implemented adaptive and sliding controllers in Matlab to control a simulated DC motor. See my project reports here:
+                                    <a href="documents/EE5104_CA1.pdf" target="_blank">Project 1</a>,
+                                    <a href="documents/EE5104_CA2.pdf" target="_blank">Project 2</a>,
+                                    <a href="documents/EE5104_CA3.pdf" target="_blank">Project 3</a>.</li>
                             </ul>
                         </div>
                     </div>
                     <div class="course-separator">
                         <div class="toggle-button" onclick="toggleContent(this)">Control Systems Design and Simulation</div>
                         <div class="toggle-content left-align-bullets">
-                            <p>
-                                I learned system identification using various parametric and non-parametric methods. See my project reports for further details:
-                                <a href="documents/EE4307_Project1.pdf" target="_blank">Project 1</a>,
-                                <a href="documents/EE4307_Project2.pdf" target="_blank">Project 2</a>.
-                            </p>
+                            <ul>
+                                <li>Knowledge acquired in: Modeling, non-parametric and parametric identification, simulation, controller design and implementation.</li>
+                                <li>Implemented projects in Matlab: <a href="documents/EE4307_Project1.pdf" target="_blank">Project 1</a>,
+                                    <a href="documents/EE4307_Project2.pdf" target="_blank">Project 2</a>.</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -139,10 +141,11 @@
                     </div>
                     <div class="course-separator">
                         <div class="toggle-button" onclick="toggleContent(this)">Physical Human Robot Interaction</div>
-                        <div class="toggle-content">
-                            <p>
-                                In the Physical Human Robot Interaction course, I learned about the safety and technical aspects of human-robot interaction, useful sensors, and control methods that influence interaction experiences. For the final project, a colleague and I programmed a virtual wall with a haptic paddle using an admittance controller. This project enhanced my skills in sensor calibration, LabView programming, and practical application of theoretical knowledge.
-                            </p>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+                                <li>Knowledge acquired in: Kinematics, sensors and actuators for human-robot interaction systems, impedance, admittance and force control strategies for interaction, haptic rendering and human safety aspects.</li>
+                                <li>Implemented virtual wall with haptic paddle using an admittance controller programmed in LabVIEW.</li>
+                            </ul>
                             <video width="170" height="315" controls>
                                 <source src="images/Virtual_mass_M_10.MOV" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -151,10 +154,55 @@
                     </div>
                     <div class="course-separator">
                         <div class="toggle-button" onclick="toggleContent(this)">Computational Control</div>
-                        <div class="toggle-content">
-                            <p>
-                                The Computational Control course covered various control methods for systems where a simple PID controller is insufficient. I learned about model-based and data-based controllers such as MPC, LQR, and DeePC, as well as learning-based controllers like Q-learning and SARSA. For the final project, I programmed MPC and DeePC controllers to autonomously land a rocket. This project involved using the reinforcement learning API Gym and solving optimization problems with cvxpy.
-                            </p>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+                                <li>Knowledge acquired in: PID, LQR, Model Predictive Control (MPC), Reinforcement Learning, Data-Driven Control.</li>
+                                <li>Implemented <a href="documents/COCO_Project_2023.pdf" target="_blank">autonomous rocket landing</a> in gym simulation environment with python. PID, MPC and Data-Enabled Predictive Control (DeePC) were implemented.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Path Planning and Decision Making for Autonomous Robots</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+                                <li>Knowledge acquired in: Discrete planning and shortest path problems, steering methods, sampling-based methods, multi-agent planning, planning under uncertainty and collision checking.</li>
+                                <li>Implemented many mini-projects in python. Multi-agent planning and control of multi-agent autonomous vehicles.</li>
+                            </ul>
+                            TODO: Insert Video
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Dynamic Programming and Optimal Control</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+                                <li>Knowledge acquired in: Dynamic Programming Algorithm, shortest path problems, infinite horizon problems, Bellman Equation, deterministic-continuous-time optimal control.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Model Predictive Control</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+                                <li>Knowledge acquired in: Optimal control theory, optimization, theoretical properties of MPC, receding-horizon control MPC, tracking and offset-free control of constrained systems, robust MPC</li>
+                                <li>Implemented MPC in programming project in Matlab.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Vision Algorithms for Mobile Robotics</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+                                <li>Knowledge acquired in: Image formation, filtering, feature extraction, multiple view geometry, dense reconstruction, tracking, image retrieval, event-based vision, visual-inertial odometry, Simultaneous Localization And Mapping (SLAM) and deep learning.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Recursive Estimation</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+                                <li>Knowledge acquired in: Bayes' theorem, Bayesian tracking, Kalman filter, extended Kalman filter, particle filter, observer-based control</li>
+                                <li>Implemented extended Kalman filter and particle filter in programming exercise in python.</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
