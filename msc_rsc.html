@@ -50,15 +50,15 @@
         
         <!-- Header -->
         <header id="header">
-            <a href="index.html" class="logo">Me</a>
+            <a href="about_me.html" class="logo">Me</a>
         </header>
 
         <!-- Nav -->
         <nav id="nav">
             <ul class="links">
-                <li><a href="index.html">About Me</a></li>
-                <li class="active"><a href="generic.html">Academic Achievements</a></li>
-                <li><a href="elements.html">Professional Experience</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li class="active"><a href="academic_achievements.html">Academic Achievements</a></li>
+                <li><a href="professional_experience.html">Professional Experience</a></li>
             </ul>
         </nav>
 
@@ -80,8 +80,7 @@
                     <div class="course-separator">
                         <div class="toggle-button" onclick="toggleContent(this)">Autonomous Robot Systems</div>
                         <div class="toggle-content">
-                            <p>                    
-                                <ul>
+                            <p> <ul>
                                     <li>Knowledge acquired in: State estimation, control systems theory, path planning and robot dynamics. Programming with python and ROS. </li>
                                     <li>Implemented Theta* path planning, bi-directional motion control and spline trajectory generation in python for TurtleBot3 robot <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
                                     <li>Implemented Extended Kalman Filter, finite state machine logic and PID controller in python for hector drone <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
@@ -95,7 +94,11 @@
                     <div class="course-separator">
                         <div class="toggle-button" onclick="toggleContent(this)">Adaptive Control Systems</div>
                         <div class="toggle-content">
-                            <p>
+                            <p> <ul>
+                                    <li>Knowledge acquired in: Adaptive control systems, </li>
+                                    <li>Implemented Theta* path planning, bi-directional motion control and spline trajectory generation in python for TurtleBot3 robot <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
+                                    <li>Implemented Extended Kalman Filter, finite state machine logic and PID controller in python for hector drone <a href="documents/EE4308_Report.pdf" target="_blank">group project</a>.</li>
+                                </ul>
                                 In the Adaptive Control Systems course, I implemented adaptive and sliding controllers in Matlab to control a simulated DC motor. See my project reports here:
                                 <a href="documents/EE5104_CA1.pdf" target="_blank">Project 1</a>,
                                 <a href="documents/EE5104_CA2.pdf" target="_blank">Project 2</a>,
@@ -206,7 +209,7 @@
     <script>
         function toggleContent(button) {
             button.classList.toggle('active');
-            var content = button.nextElementSibling;
+            var content = button.nextprofessional_experienceibling;
             if (content.style.display === "block") {
                 content.style.display = "none";
             } else {
