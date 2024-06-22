@@ -48,6 +48,14 @@
             padding-left: 0;
             text-align: left; /* Ensure the text is left-aligned */
         }
+        .fixed-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff; /* Ensure it has a background color */
+            z-index: 1000; /* Ensure it appears above other content */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+        }        
     </style>
 </head>
 	<body class="is-preload">
@@ -60,7 +68,7 @@
             </header>
 
             <!-- Nav -->
-            <nav id="nav">
+            <nav id="nav" class="fixed-nav">
                 <ul class="links">
                     <li><a href="about_me.html">About Me</a></li>
                     <li class="active"><a href="academic_achievements.html">Academic Achievements</a></li>
@@ -136,9 +144,7 @@
                                         <div class="toggle-button" onclick="toggleContent(this)">Conference Paper</div>
                                         <div class="toggle-content">
                                             <p>
-                                                After completing the project, we published a conference paper describing our novel mechanical design, which won the Best Paper award at the conference:
-                                                <a href="documents/Best_Paper_Award_Certificate.pdf" target="_blank">View the award certificate</a>
-                                                <a href="https://ieeexplore.ieee.org/document/10156414" target="_blank">View the conference paper</a>
+                                                After completing the project, we published a <a href="https://ieeexplore.ieee.org/document/10156414" target="_blank">conference paper</a> at the International Conference on Unmanned Aerial Systems (ICUAS). The paper describes our novel mechanical design and was given the <a href="documents/Best_Paper_Award_Certificate.pdf" target="_blank">Best Paper</a> award at the conference.
                                             </p>
                                         </div>
                                     </div>
@@ -146,7 +152,7 @@
                                         <div class="toggle-button" onclick="toggleContent(this)">Aerial Manipulation</div>
                                         <div class="toggle-content">
                                             <p>
-                                                Our aerial manipulator combined an omnidirectional floating base with a parallel robot arm. The coaxial, tiltable propeller groups enabled us to fly in any pose. With our robotic arm, we were able to compensate for positional errors of the floating base and grasp objects with adaptive fingers. The videos below showcase two grasping missions:
+                                                Our aerial manipulator combines an omnidirectional floating base with a parallel robot arm. The coaxial, tiltable propeller groups allow the robot fly in any pose. The robot arm compensates for positional errors of the floating base and grasp objects with adaptive fingers. The videos below showcase two grasping missions.
                                             </p>
                         
                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/6QirjDjgCOU" frameborder="0" allowfullscreen></iframe>
@@ -166,8 +172,8 @@
                                         <div class="toggle-button" onclick="toggleContent(this)">Bachelor Thesis</div>
                                         <div class="toggle-content">
                                             <p>
-                                                For my Bachelor's thesis, a project colleague and I developed an object detection and grasp planning pipeline for our aerial manipulator where we used OpenCV to code our perception algorithm.
-                                                <a href="documents/BT_object_detection.pdf" target="_blank">View my Bachelor's thesis.</a>
+                                                For my Bachelor's thesis, a project colleague and I developed an object detection and grasp planning pipeline for our aerial manipulator. The project gave me experience using OpenCV and enhanced my usage of the Gazebo simulation environment as well as my python coding skills.
+                                                View my <a href="documents/BT_object_detection.pdf" target="_blank"> Bachelor's thesis</a> here.
                                             </p>
                                         </div>
                                     </div>
