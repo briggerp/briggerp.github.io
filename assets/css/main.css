@@ -3621,9 +3621,9 @@ input, select, textarea {
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
 		padding: 0 2rem 0 0;
-		position: fixed; /* Change from relative to fixed */
-		top: 0; /* Ensure it sticks to the top */
-		left: 0; /* Ensure it sticks to the left */
+		position: fixed; /* Fix the position */
+		top: 0; /* Align to top */
+		left: 0; /* Align to left */
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
