@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Academic Achievements</title>
+    <title>MSc Robotics, Systems and Control</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        /* Insert the new CSS here */
+        .toggle-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            padding-left: 25px;
+            position: relative;
+        }
+        .toggle-button:before {
+            content: "+";
+            display: inline-block;
+            font-size: 24px;
+            color: #000;
+            position: absolute;
+            left: 0;
+        }
+        .toggle-button.active:before {
+            content: "-";
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+        }
         .section {
             border: 1px solid #ddd;
             padding: 20px;
@@ -14,46 +37,23 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
         .course-separator {
             border-top: 1px solid #ccc;
             margin: 10px 0;
             padding-top: 10px;
         }
-
-        .toggle-button {
-            font-weight: bold;
-            cursor: pointer;
-            position: relative;
-            padding-left: 25px;
-        }
-
-        .toggle-button:before {
-            content: "+";
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-size: 24px;
-            line-height: 1;
-            color: #000;
-        }
-
-        .toggle-button.active:before {
-            content: "-";
-        }
-
-        .toggle-content {
-            display: none;
-            padding-top: 10px;
-        }
     </style>
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
+    <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
+        
+        <!-- Header -->
         <header id="header">
             <a href="index.html" class="logo">Me</a>
         </header>
+
+        <!-- Nav -->
         <nav id="nav">
             <ul class="links">
                 <li><a href="index.html">About Me</a></li>
@@ -61,14 +61,20 @@
                 <li><a href="elements.html">Professional Experience</a></li>
             </ul>
         </nav>
+
+        <!-- Main -->
         <div id="main">
+            <!-- Featured Post -->
             <article class="post featured">
                 <header class="major">
                     <h2>MSc Robotics, Systems and Control</h2>
                 </header>
-                <p>
-                    I am currently pursuing my MSc in Robotics, Systems and Control at ETH Zurich. This program has equipped me with advanced knowledge and skills in the field of robotics, focusing on various aspects such as autonomous systems, control systems, and human-robot interaction. Below are some of the key courses and projects I have completed during my studies.
-                </p>
+                <section>
+                    <p>
+                        I decided to specialize in Robotics, Systems and Control at ETH Zurich for my Master's because of my passion for the field, inspired by my focus project during my Bachelor's. Throughout my degree, I enhanced my programming skills in Python, C++, Matlab, and LabView. I also learned to use optimization libraries such as cvxpy for model-based and data-based controllers and started exploring machine learning with libraries like PyTorch and TensorFlow. Below are the projects I worked on during my Master's degree.
+                        <a href="documents/Masters_Transcript.pdf" target="_blank"> View my Master's transcript</a>
+                    </p>
+                </section>
                 <section class="section">
                     <h3>National University of Singapore (NUS)</h3>
                     <div class="course-separator">
@@ -79,10 +85,6 @@
                                 <a href="documents/EE4308_Report.pdf" target="_blank">Project 1</a>,                       
                                 <a href="documents/EE4308_Project2.pdf" target="_blank">Project 2</a>.
                             </p>
-                            <!-- <video width="320" height="240" controls>
-                                <source src="videos/turtlebot_project.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video> -->
                         </div>
                     </div>
                     <div class="course-separator">
@@ -123,7 +125,7 @@
                         <div class="toggle-content">
                             <p>
                                 For my semester project, I developed a neural network to control a motorized labyrinth game by imitating a Model-Predictive Control (MPC) expert. This imitation learning approach allowed for higher bandwidth control with a similar success rate. Through this project, I gained experience with machine learning libraries such as PyTorch and TensorFlow, and furthered my knowledge of ROS2. 
-                                Read my report for more details:  <a href="documents/Semester_Project_Brio_Labyrinth.pdf" target="_blank">Semester project report</a>.
+                                Read my report for more details: <a href="documents/Semester_Project_Brio_Labyrinth.pdf" target="_blank">Semester project report</a>.
                             </p>
                             <video width="560" height="315" controls>
                                 <source src="images/SUCCESS.MOV" type="video/mp4">
@@ -137,8 +139,8 @@
                             <p>
                                 In the Physical Human Robot Interaction course, I learned about the safety and technical aspects of human-robot interaction, useful sensors, and control methods that influence interaction experiences. For the final project, a colleague and I programmed a virtual wall with a haptic paddle using an admittance controller. This project enhanced my skills in sensor calibration, LabView programming, and practical application of theoretical knowledge.
                             </p>
-                            <video width="320" height="240" controls>
-                                <source src="videos/haptic_paddle.mp4" type="video/mp4">
+                            <video width="560" height="315" controls>
+                                <source src="images/Virtual_mass_M_10.MOV" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -147,8 +149,40 @@
                         <div class="toggle-button" onclick="toggleContent(this)">Computational Control</div>
                         <div class="toggle-content">
                             <p>
-                                In this course, I explored complex topics such as Nonlinear Model Predictive Control for robotic arms, dynamic programming for Markov Decision Processes, and potential field algorithms. This experience was pivotal in solidifying my understanding of autonomous navigation and decision-making algorithms.
-                                <a href="documents/DDP_MiniProjects.pdf" target="_blank">View mini-projects (PDF)</a>
+                                The Computational Control course covered various control methods for systems where a simple PID controller is insufficient. I learned about model-based and data-based controllers such as MPC, LQR, and DeePC, as well as learning-based controllers like Q-learning and SARSA. For the final project, I programmed MPC and DeePC controllers to autonomously land a rocket. This project involved using the reinforcement learning API Gym and solving optimization problems with cvxpy.
+                                <a href="documents/COCO_Project_2023.pdf" target="_blank">View the rocket project report (PDF)</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Path Planning and Decision Making for Autonomous Robots</div>
+                        <div class="toggle-content">
+                            <p>
+                                In this course, I implemented various algorithms for path planning and decision making in Python. These included Depth-First and Breadth-First graph search, Uniform Cost search, A* search, policy and value iteration for Markov Decision Processes, and Linear Programming for optimization. The final project involved developing a path planning and decision-making pipeline for multiple vehicles on a road network with obstacles. I modeled the car dynamics and used RRT* for path planning, ensuring vehicles avoided collisions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Dynamic Programming and Optimal Control</div>
+                        <div class="toggle-content">
+                            <p>
+                                The Bellman equation was derived and discussed. This led to the formulation of policy and value iteration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Vision Algorithms for Mobile Robotics</div>
+                        <div class="toggle-content">
+                            <p>
+                                I learned about traditional computer vision algorithms and state-of-the-art algorithms for mobile robotics. The exercises were conducted in Matlab.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Recursive Estimation</div>
+                        <div class="toggle-content">
+                            <p>
+                                The (Extended) Kalman Filter was derived theoretically. Particle filtering was also discussed. I implemented both filters in a programming exercise.
                             </p>
                         </div>
                     </div>
@@ -156,14 +190,22 @@
             </article>
         </div>
     </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
-        function toggleContent(element) {
-            element.classList.toggle('active');
-            var content = element.nextElementSibling;
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
+        function toggleContent(button) {
+            button.classList.toggle('active');
+            var content = button.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
             } else {
-                content.style.display = 'block';
+                content.style.display = "block";
             }
         }
     </script>
