@@ -74,7 +74,7 @@
             bottom: 20px;
             right: 20px;
             background-color: #ffffff; /* Primary color */
-            color: #656565; /* Text color */
+            color: #211f51; /* Text color */
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -87,7 +87,7 @@
         }
         
         #scrollToTopButton:hover {
-            background-color: #292929; /* Darker shade of your primary color */
+            background-color: #0a081f; /* Darker shade of your primary color */
         }        
     </style>
 </head>
@@ -309,6 +309,20 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Sticky navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            var nav = document.getElementById('nav');
+            var sticky = nav.offsetTop;
+
+            window.onscroll = function() {
+                if (window.pageYOffset >= sticky) {
+                    nav.classList.add('sticky');
+                } else {
+                    nav.classList.remove('sticky');
+                }
+            };
         });
     </script>
 
