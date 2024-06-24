@@ -68,15 +68,6 @@
         .no-margin-bottom-list-content {
             margin-bottom: 0.0; /* Remove bottom margin for the list */
         }
-        #nav.fixed {
-            background: rgba(255,255,255,0.9); /* Slightly more opaque background for readability */
-            height: 4rem;
-            line-height: 4rem;
-            padding: 0 2rem;
-            position: fixed;
-            width: 100%; /* Full width */
-            z-index: 1000; /* Ensure it's above other elements */
-        }
     </style>
 </head>
 <body class="is-preload">
@@ -270,18 +261,6 @@
             button.classList.toggle("active");
             content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
         }
-    </script>
-    <script>
-        window.addEventListener('scroll', function() {
-            var nav = document.getElementById('nav');
-            var navPosition = nav.offsetTop;
-    
-            if (window.pageYOffset >= navPosition) {
-                nav.classList.add('fixed');
-            } else {
-                nav.classList.remove('fixed');
-            }
-        });
     </script>
 </body>
 </html>
