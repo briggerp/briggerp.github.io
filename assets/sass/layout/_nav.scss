@@ -12,7 +12,7 @@
     line-height: 4rem;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 2rem 0 0;
+    padding: 0 2rem;
     position: relative;
     width: calc(100% - #{_size(padding) * 2});
     max-width: _size(wrapper);
@@ -24,9 +24,6 @@
         line-height: 4rem;
         padding: 0 2rem;
         position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
         width: 100%;
         z-index: 1000; // Ensure it's above other elements
     }
