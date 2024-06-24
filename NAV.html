@@ -46,24 +46,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        function toggleContent(button) {
-            const content = button.nextElementSibling;
-            button.classList.toggle("active");
-            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
-        }
-    </script>
-    <script>
-        window.addEventListener('scroll', function() {
-            var menu = document.getElementById('menu');
-            var menuPosition = menu.offsetTop;
-    
-            if (window.pageYOffset >= menuPosition) {
-                menu.classList.add('fixed');
-            } else {
-                menu.classList.remove('fixed');
-            }
-        });
-    </script>
 </body>
 </html>
