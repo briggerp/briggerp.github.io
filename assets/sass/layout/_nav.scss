@@ -25,6 +25,16 @@
 		max-width: _size(wrapper);
 		z-index: 2;
 
+		&.fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: white; // Change background color to make it distinct when fixed
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			z-index: 1000;
+		}
+
 		ul {
 			&.links {
 				@include vendor('display', 'flex');
