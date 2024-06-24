@@ -68,6 +68,21 @@
         .no-margin-bottom-list-content {
             margin-bottom: 0.0; /* Remove bottom margin for the list */
         }
+        #menu {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -90,6 +105,12 @@
 
         <!-- Main -->
         <div id="main">
+            <!-- Menu -->
+            <div id="menu">
+                <a href="#about-me">About Me</a>
+                <a href="#academic-achievements">Academic Achievements</a>
+                <a href="#professional-experience">Professional Experience</a>
+            </div>
             <!-- Featured Post -->
             <article class="post featured">
                 <header class="major">
@@ -261,6 +282,18 @@
             button.classList.toggle("active");
             content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
         }
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var menu = document.getElementById('menu');
+            var menuPosition = menu.offsetTop;
+    
+            if (window.pageYOffset >= menuPosition) {
+                menu.classList.add('fixed');
+            } else {
+                menu.classList.remove('fixed');
+            }
+        });
     </script>
 </body>
 </html>
