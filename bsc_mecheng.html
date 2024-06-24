@@ -58,7 +58,16 @@
             background-color: #fff; /* Ensure it has a background color */
             z-index: 1000; /* Ensure it appears above other content */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
-        }        
+        }
+        .start-align-bullets ul {
+            list-style-position: outside;
+            padding-left: 20px; /* Adjust padding to ensure bullets are visible */
+            text-align: left; /* Ensure the text is left-aligned */
+        }
+        .start-align-bullets li {
+            margin-left: 0; /* Ensure no extra margin is applied */
+            font-style: italic;
+        }     
     </style>
 </head>
 	<body class="is-preload">
@@ -94,14 +103,22 @@
                             <!-- <span class="date" id="current-date"></span> -->
                             <h2>BSc Mechanical Engineering</h2>
                             <!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
-                            <p>
-                                I graduated in the top two percentile of my class with a GPA of 5.54. My undergraduate degree at ETH Zurich provided a solid foundation in mathematics, physical concepts, system dynamics, thermodynamics, and fluid dynamics. I also developed research presentation skills and gained an introduction to control theory, programming, and robotics.
+                            <p>I graduated in the top two percentile of my class with a GPA of 5.54. With my degree, I acquired theoretical knowledge and practical implementation experience in the following areas:</p> 
+                                <div class="start-align-bullets">
+                                    <ul><li>Programming: Python, C++, Matlab, LabView, ROS/ROS2, Git, LaTeX</li>
+                                        <li>Mathematics: Linear algebra, analysis, stochastics</li>
+                                        <li>Control Theory: SISO, MIMO, PID, observer-based control, LQR</li>
+                                        <li>Thermo- and Fluiddynamics</li>
+                                        <li>System dynamics and mechanics</li>
+                                        <li>Materials and Production: Single-agent and multi-agent planning</li>
+                                        <li></li></ul>
+                                </div>
+                                My undergraduate degree at ETH Zurich in mechanical engineering provided a solid foundation in mathematics, physical concepts, system dynamics, thermodynamics, and fluid dynamics. I also developed research presentation skills and gained an introduction to control theory, programming, and robotics.
                                 During my studies, I learned to document my research in LaTeX and developed proficiency in programming languages such as Matlab, C++, and Python. I also acquired the ability to break down complex, abstract problems into manageable subproblems.
-                                View my 
+                                <p>View my 
                                 <a href="documents/Academic Record.pdf" target="_blank">Bachelor's transcript</a>,
                                 <a href="documents/Diploma.pdf" target="_blank"> graduation diploma</a> and
-                                <a href="documents/Statistics.pdf" target="_blank"> graduation statistics.</a>
-                            </p>
+                                <a href="documents/Statistics.pdf" target="_blank"> graduation statistics</a> here.</p>
                         </header>
                                 <!-- I graduated from mechanical engineering in the top-two percentile of my class with a GPA of 5.54 (TODO: Add a link that opens my transcript of records as a pdf). My undergraduate degree gave me strong mathematical foundations, grasp of physical, thermo- and fluiddynamical concepts, research presentation skills and an introduction into the world of control theory, programming and robotics. 
                                 In particular, I learned how to document my research in LaTeX, how to program in Matlab, C++ and python, and how to break complicated, abstract problems into solvable subproblems.
