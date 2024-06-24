@@ -68,20 +68,14 @@
         .no-margin-bottom-list-content {
             margin-bottom: 0.0; /* Remove bottom margin for the list */
         }
-        #menu {
-            width: 100%;
-            background-color: white;
-            display: flex;
-            justify-content: space-around;
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .fixed {
+        #nav.fixed {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             z-index: 1000;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -105,12 +99,6 @@
 
         <!-- Main -->
         <div id="main">
-            <!-- Menu -->
-            <div id="menu">
-                <a href="#about-me">About Me</a>
-                <a href="#academic-achievements">Academic Achievements</a>
-                <a href="#professional-experience">Professional Experience</a>
-            </div>
             <!-- Featured Post -->
             <article class="post featured">
                 <header class="major">
@@ -285,13 +273,13 @@
     </script>
     <script>
         window.addEventListener('scroll', function() {
-            var menu = document.getElementById('menu');
-            var menuPosition = menu.offsetTop;
+            var nav = document.getElementById('nav');
+            var navPosition = nav.offsetTop;
     
-            if (window.pageYOffset >= menuPosition) {
-                menu.classList.add('fixed');
+            if (window.pageYOffset >= navPosition) {
+                nav.classList.add('fixed');
             } else {
-                menu.classList.remove('fixed');
+                nav.classList.remove('fixed');
             }
         });
     </script>
