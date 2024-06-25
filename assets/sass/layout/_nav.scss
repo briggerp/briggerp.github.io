@@ -55,10 +55,9 @@
                     font-size: 0.8rem;
                     outline: none;
                     padding: 0 2rem;
-					color: red;
 
                     &:hover {
-                        color: _palette(invert, bg) !important;
+                        color: inherit !important;
                         background-color: transparentize(_palette(invert, fg), 0.9);
                     }
                 }
@@ -68,6 +67,19 @@
 
                     a {
                         color: _palette(invert, bg);
+
+                        &:hover {
+                            color: _palette(invert, accent) !important;
+                        }
+                    }
+                }
+
+				
+				&.inactive {
+                    background-color: _palette(invert, fg);
+
+                    a {
+                        color: red;
 
                         &:hover {
                             color: _palette(invert, accent) !important;
