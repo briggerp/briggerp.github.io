@@ -4772,6 +4772,17 @@ input, select, textarea {
 		background-color: #515151; /* Darker shade of your primary color */
 	}  
 
+	/* Sticky Navigation */
+	#nav.sticky {
+		position: fixed;
+		top: 4rem;
+		left: 0;
+		right: 0;
+		background: rgb(255, 255, 255);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		z-index: 999; /* Increase the z-index value if necessary */
+	}
+
 	.mantra {
 		font-family: 'Georgia', serif;
 		font-size: 1.2em;
