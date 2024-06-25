@@ -6,19 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        .mantra {
-            font-family: 'Georgia', serif;
-            font-size: 1.2em;
-            font-style: italic;
-            text-align: center;
-            margin: 20px 0;
-            padding: 10px;
-            background: #f4f4f4;
-            border-left: 4px solid #ff7f50;
-            border-right: 4px solid #ff7f50;
-        }
-    </style>
 </head>
 <body class="is-preload">
     <!-- Wrapper -->
@@ -86,5 +73,54 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+        <!-- Scroll to top button -->
+        <a href="#" id="scrollToTopButton" aria-label="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var nav = document.getElementById('nav');
+                var scrollToTopButton = document.getElementById('scrollToTopButton');
+                var sticky = nav.offsetTop;
+                var navLinks = nav.querySelectorAll('.links li a');
+        
+                window.onscroll = function() {
+                    var scrollTop = window.pageYOffset;
+        
+                    // Sticky nav functionality
+                    if (scrollTop > sticky) {
+                        nav.classList.add('sticky');
+                        // Update class of navigation links
+                        navLinks.forEach(function(link) {
+                            if (!link.parentNode.classList.contains('active')) {
+                                link.classList.add('inactive');
+                            }
+                        });
+                    } else {
+                        nav.classList.remove('sticky');
+                        // Remove inactive class from navigation links
+                        navLinks.forEach(function(link) {
+                            link.classList.remove('inactive');
+                        });
+                    }
+        
+                    // Scroll to top button functionality
+                    if (scrollTop > 20) {
+                        scrollToTopButton.style.display = 'block';
+                    } else {
+                        scrollToTopButton.style.display = 'none';
+                    }
+                };
+        
+                // Smooth scroll to top when arrow is clicked
+                scrollToTopButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>   
 </body>
 </html>

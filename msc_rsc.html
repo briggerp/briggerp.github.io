@@ -209,12 +209,13 @@
             var scrollToTopButton = document.getElementById('scrollToTopButton');
             var sticky = nav.offsetTop;
             var navLinks = nav.querySelectorAll('.links li a');
-    
+        
             window.onscroll = function() {
                 var scrollTop = window.pageYOffset;
-    
+                var navOffset = nav.offsetTop;
+        
                 // Sticky nav functionality
-                if (scrollTop > sticky) {
+                if (scrollTop > navOffset) {
                     nav.classList.add('sticky');
                     // Update class of navigation links
                     navLinks.forEach(function(link) {
@@ -229,7 +230,7 @@
                         link.classList.remove('inactive');
                     });
                 }
-    
+        
                 // Scroll to top button functionality
                 if (scrollTop > 20) {
                     scrollToTopButton.style.display = 'block';
@@ -237,7 +238,7 @@
                     scrollToTopButton.style.display = 'none';
                 }
             };
-    
+        
             // Smooth scroll to top when arrow is clicked
             scrollToTopButton.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -247,6 +248,7 @@
                 });
             });
         });
+        
     </script>    
 
 </body>

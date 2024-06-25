@@ -4789,20 +4789,11 @@ input, select, textarea {
 		pointer-events: none; /* Disable hover and click events */
 	}
 
-	/* Active Link Style */
-	#nav.sticky ul.links li.active a {
-		color: #ffffff2d; /* Ensure active link color matches default */
-	}
-
-	/* Hover Effect for Active Links */
-	#nav.sticky ul.links li.active a:hover {
-		color: _palette(invert, accent); /* Hover color for active link */
-	}
-
-	/* Ensure Hover Effect for Active Links Overrides Inactive Links */
-	#nav.sticky ul.links li a:hover {
-		color: inherit; /* Ensure hover color inherits */
-		background-color: transparentize(_palette(invert, fg), 0.9); /* Background on hover */
+	/* Hover Effect for Inactive Links */
+	#nav.sticky ul.links li a.inactive:hover {
+		color: #888; /* Ensure hover color matches inactive link color */
+		background-color: transparent; /* No background color on hover */
+		text-decoration: none; /* Remove underline on hover if any */
 	}
 	.mantra {
 		font-family: 'Georgia', serif;
