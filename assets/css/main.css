@@ -4771,10 +4771,7 @@ input, select, textarea {
 	#scrollToTopButton:hover {
 		background-color: #868789; /* Darker shade of your primary color */
 	}       
-	#nav ul.links li a {
-		color: #000; /* Adjust the default color */
-	}
-	
+
 	/* Sticky Navigation */
 	#nav.sticky {
 		position: fixed;
@@ -4789,9 +4786,4 @@ input, select, textarea {
 	/* Styling Inactive Nav Links in Sticky Nav */
 	#nav.sticky ul.links li a.inactive {
 		color: #888; /* Light gray color for inactive links */
-	}
-	
-	/* Active Link Style */
-	#nav.sticky ul.links li.active a {
-		color: #000; /* Ensure active link color matches default */
 	}
