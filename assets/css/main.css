@@ -4792,6 +4792,7 @@ input, select, textarea {
 	/* Hover Effect for Inactive Links */
 	#nav.sticky ul.links li a.inactive:hover {
 		color: #888; /* Ensure hover color matches inactive link color */
+		pointer-events: auto; /* Allow clicks on inactive links */
 	}
 
 	.mantra {
