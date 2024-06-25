@@ -6,7 +6,7 @@
         'transform 1s ease',
         'opacity 1s ease'
     ));
-    background: rgba(255, 255, 255, 0.176);
+    background: rgba(255, 255, 255, 1.0);
     height: 4rem;
     line-height: 4rem;
     margin: -4rem auto 0 auto;
@@ -23,11 +23,10 @@
         top: 4rem;
         left: 0;
         right: 0;
-		margin: 4rem auto 0 auto;
+        margin: 4rem auto 0 auto;
         background: rgba(255, 255, 255, 1.0);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 999; // Ensure it's above other elements
-
     }
 
     ul {
@@ -58,7 +57,7 @@
                     padding: 0 2rem;
 
                     &:hover {
-                        color: inherit !important;
+                        color: grey; // Change to grey
                         background-color: transparentize(_palette(invert, fg), 0.9);
                     }
                 }
@@ -74,7 +73,6 @@
                         }
                     }
                 }
-				
             }
         }
 
