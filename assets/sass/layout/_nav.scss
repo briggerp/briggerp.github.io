@@ -55,9 +55,10 @@
                     font-size: 0.8rem;
                     outline: none;
                     padding: 0 2rem;
+					color: red
 
                     &:hover {
-                        color: red !important;
+                        color: _palette(invert, bg) !important;
                         background-color: transparentize(_palette(invert, fg), 0.9);
                     }
                 }
