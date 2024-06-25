@@ -247,7 +247,24 @@
                     behavior: 'smooth'
                 });
             });
+        
+            // Add event listeners for each nav link to prevent default behavior
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent default navigation behavior
+                    var targetId = this.getAttribute('href').substring(1); // Get target ID from href
+                    var targetElement = document.getElementById(targetId); // Find target element
+                    if (targetElement) {
+                        var offsetTop = targetElement.offsetTop - 4; // Adjust offset if needed
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
         });
+        
         
     </script>    
 
