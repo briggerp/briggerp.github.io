@@ -208,23 +208,36 @@
             var nav = document.getElementById('nav');
             var scrollToTopButton = document.getElementById('scrollToTopButton');
             var sticky = nav.offsetTop;
-
+            var navLinks = nav.querySelectorAll('.links li a');
+    
             window.onscroll = function() {
+                var scrollTop = window.pageYOffset;
+    
                 // Sticky nav functionality
-                if (window.pageYOffset > sticky) {
+                if (scrollTop > sticky) {
                     nav.classList.add('sticky');
+                    // Update class of navigation links
+                    navLinks.forEach(function(link) {
+                        if (!link.parentNode.classList.contains('active')) {
+                            link.classList.add('inactive');
+                        }
+                    });
                 } else {
                     nav.classList.remove('sticky');
+                    // Remove inactive class from navigation links
+                    navLinks.forEach(function(link) {
+                        link.classList.remove('inactive');
+                    });
                 }
-
+    
                 // Scroll to top button functionality
-                if (window.pageYOffset > 20) {
+                if (scrollTop > 20) {
                     scrollToTopButton.style.display = 'block';
                 } else {
                     scrollToTopButton.style.display = 'none';
                 }
             };
-
+    
             // Smooth scroll to top when arrow is clicked
             scrollToTopButton.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -234,34 +247,7 @@
                 });
             });
         });
-    </script>
-    <script>
-        $(document).ready(function() {
-            var nav = $('#nav');
-            var navLinks = nav.find('.links li a');
-
-            $(window).scroll(function() {
-                var scrollTop = $(window).scrollTop();
-                var navOffset = nav.offset().top;
-
-                // Check if navigation bar should become sticky
-                if (scrollTop > navOffset) {
-                    nav.addClass('sticky');
-                    // Update class of navigation links
-                    navLinks.each(function() {
-                        if (!$(this).parent().hasClass('active')) {
-                            $(this).addClass('inactive');
-                        }
-                    });
-                } else {
-                    nav.removeClass('sticky');
-                    // Remove inactive class from navigation links
-                    navLinks.removeClass('inactive');
-                }
-            });
-        });
-    </script>
-    
+    </script>    
 
 </body>
 </html>
