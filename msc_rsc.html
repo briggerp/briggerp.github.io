@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         .toggle-button {
@@ -74,8 +73,8 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #ab2d2d; /* Primary color */
-            color: #211f51; /* Text color */
+            background-color: #007bff; /* Primary color */
+            color: #ffffff; /* Text color */
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -88,7 +87,7 @@
         }
         
         #scrollToTopButton:hover {
-            background-color: #0a081f; /* Darker shade of your primary color */
+            background-color: #0056b3; /* Darker shade of your primary color */
         }        
     </style>
 </head>
@@ -310,21 +309,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-    </script>
-    <script>
-        // Sticky navigation functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            var nav = document.getElementById('nav');
-            var sticky = nav.offsetTop;
-
-            window.onscroll = function() {
-                if (window.pageYOffset >= sticky) {
-                    nav.classList.add('sticky');
-                } else {
-                    nav.classList.remove('sticky');
-                }
-            };
         });
     </script>
 
