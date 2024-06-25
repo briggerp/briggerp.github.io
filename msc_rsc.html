@@ -214,11 +214,11 @@
                 var scrollTop = window.pageYOffset;
     
                 // Sticky nav functionality
-                if (scrollTop > navOffset) {
+                if (scrollTop > sticky) {
                     nav.classList.add('sticky');
                     // Update class of navigation links
                     navLinks.forEach(function(link) {
-                        if (!link.classList.contains('active')) {
+                        if (!link.parentNode.classList.contains('active')) {
                             link.classList.add('inactive');
                         }
                     });
