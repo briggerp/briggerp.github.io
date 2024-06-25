@@ -218,19 +218,40 @@
         <i class="fas fa-arrow-up"></i>
     </a>
     <script>
-        // Scroll to top functionality
         document.addEventListener('DOMContentLoaded', function() {
+            var nav = document.getElementById('nav');
             var scrollToTopButton = document.getElementById('scrollToTopButton');
-
-            // Show the button when user scrolls down 20px from the top of the document
+            var sticky = nav.offsetTop;
+            var navLinks = nav.querySelectorAll('.links li a');
+    
             window.onscroll = function() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                var scrollTop = window.pageYOffset;
+    
+                // Sticky nav functionality
+                if (scrollTop > sticky) {
+                    nav.classList.add('sticky');
+                    // Update class of navigation links
+                    navLinks.forEach(function(link) {
+                        if (!link.parentNode.classList.contains('active')) {
+                            link.classList.add('inactive');
+                        }
+                    });
+                } else {
+                    nav.classList.remove('sticky');
+                    // Remove inactive class from navigation links
+                    navLinks.forEach(function(link) {
+                        link.classList.remove('inactive');
+                    });
+                }
+    
+                // Scroll to top button functionality
+                if (scrollTop > 20) {
                     scrollToTopButton.style.display = 'block';
                 } else {
                     scrollToTopButton.style.display = 'none';
                 }
             };
-
+    
             // Smooth scroll to top when arrow is clicked
             scrollToTopButton.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -240,6 +261,6 @@
                 });
             });
         });
-    </script>
+    </script>   
     </body>
 </html>
