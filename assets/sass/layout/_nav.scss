@@ -57,7 +57,7 @@
                     padding: 0 2rem;
 
                     &:hover {
-                        color: #0000002d !important;
+                        // color: inherit !important;
                         background-color: transparentize(_palette(invert, fg), 0.9);
                     }
                 }
