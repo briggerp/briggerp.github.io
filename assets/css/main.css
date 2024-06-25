@@ -4778,6 +4778,7 @@ input, select, textarea {
 		top: 4rem;
 		left: 0;
 		right: 0;
+		margin: 4rem auto 0 auto;
 		background: rgba(255, 255, 255, 0.9);
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 		z-index: 1000; /* Increase the z-index value if necessary */
@@ -4786,4 +4787,15 @@ input, select, textarea {
 	/* Styling Inactive Nav Links in Sticky Nav */
 	#nav.sticky ul.links li a.inactive {
 		color: #888; /* Light gray color for inactive links */
+	}
+	.mantra {
+		font-family: 'Georgia', serif;
+		font-size: 1.2em;
+		font-style: italic;
+		text-align: center;
+		margin: 20px 0;
+		padding: 10px;
+		background: #f4f4f4;
+		border-left: 4px solid #ff7f50;
+		border-right: 4px solid #ff7f50;
 	}
