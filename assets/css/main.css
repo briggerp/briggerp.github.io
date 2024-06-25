@@ -4772,6 +4772,15 @@ input, select, textarea {
 		background-color: #515151; /* Darker shade of your primary color */
 	}  
 
+	#nav ul.links li a {
+		color: #0000002d; /* Text color */
+	}
+
+	/* Hover Effect for Inactive Links */
+	#nav.sticky ul.links li a:hover {
+		color: #555; /* Desired hover color for inactive links */
+	}
+
 	/* Sticky Navigation */
 	#nav.sticky {
 		position: fixed;
@@ -4782,6 +4791,7 @@ input, select, textarea {
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 		z-index: 999; /* Increase the z-index value if necessary */
 	}
+	
 
 	.mantra {
 		font-family: 'Georgia', serif;
