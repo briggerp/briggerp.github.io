@@ -127,6 +127,30 @@
 			dateElement.textContent = formattedDate;
 		});
 	</script>
+    <script>
+        // Scroll to top functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollToTopButton = document.getElementById('scrollToTopButton');
+
+            // Show the button when user scrolls down 20px from the top of the document
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            };
+
+            // Smooth scroll to top when arrow is clicked
+            scrollToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </html>
 
 

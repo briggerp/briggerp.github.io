@@ -123,7 +123,7 @@
                                         <li>Basics in thermodynamics, fluiddynamics, physics, electrical engineering, quantum mechanics and chemistry</li>
                                         <li>System dynamics and mechanics: Statics, kinematics, rigid body motion, Lagrange equations</li>
                                         <li>System modeling: First-principles and data-driven system modeling. System identification</li>
-                                        <li>Materials and production, machine elements and dimensioning of machines</li>
+                                        <li>Materials and production, machine elements and dimensioning</li>
                                 </div>
                                 <!-- My undergraduate degree at ETH Zurich in mechanical engineering provided a solid foundation in mathematics, physical concepts, system dynamics, thermodynamics, and fluid dynamics. I also developed research presentation skills and gained an introduction to control theory, programming, and robotics.
                                 During my studies, I learned to document my research in LaTeX and developed proficiency in programming languages such as Matlab, C++, and Python. I also acquired the ability to break down complex, abstract problems into manageable subproblems. -->
@@ -287,6 +287,30 @@
                 button.classList.toggle("active");
                 content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
             }
+        </script>
+        <script>
+            // Scroll to top functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                var scrollToTopButton = document.getElementById('scrollToTopButton');
+    
+                // Show the button when user scrolls down 20px from the top of the document
+                window.onscroll = function() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        scrollToTopButton.style.display = 'block';
+                    } else {
+                        scrollToTopButton.style.display = 'none';
+                    }
+                };
+    
+                // Smooth scroll to top when arrow is clicked
+                scrollToTopButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
         </script>
     </body>
 </html>
