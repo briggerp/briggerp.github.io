@@ -89,7 +89,10 @@
         #scrollToTopButton:hover {
             background-color: #868789; /* Darker shade of your primary color */
         }       
-
+        /* Default Nav Link Style */
+        #nav ul.links li a {
+            color: #000; /* Adjust the default color */
+        }
         /* Sticky Navigation */
         #nav.sticky {
             position: fixed;
@@ -100,7 +103,10 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             z-index: 999; /* Ensure it's above other elements */
         }
-         
+        /* Styling Inactive Nav Links in Sticky Nav */
+        #nav.sticky ul.links li a {
+            color: #888; /* Light gray color for inactive links */
+        }
     </style>
 </head>
 <body class="is-preload">
