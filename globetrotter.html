@@ -162,29 +162,33 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script>
-            // Scroll to top functionality
-            document.addEventListener('DOMContentLoaded', function() {
-                var scrollToTopButton = document.getElementById('scrollToTopButton');
-    
-                // Show the button when user scrolls down 20px from the top of the document
-                window.onscroll = function() {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        scrollToTopButton.style.display = 'block';
-                    } else {
-                        scrollToTopButton.style.display = 'none';
-                    }
-                };
-    
-                // Smooth scroll to top when arrow is clicked
-                scrollToTopButton.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
+    <!-- Scroll to top button -->
+    <a href="#" id="scrollToTopButton" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script>
+        // Scroll to top functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollToTopButton = document.getElementById('scrollToTopButton');
+
+            // Show the button when user scrolls down 20px from the top of the document
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            };
+
+            // Smooth scroll to top when arrow is clicked
+            scrollToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
                 });
             });
-        </script>
+        });
+    </script>
     </body>
 </html>
