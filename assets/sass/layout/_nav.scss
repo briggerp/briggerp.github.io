@@ -27,6 +27,11 @@
         background: rgba(255, 255, 255, 1.0);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 999; // Ensure it's above other elements
+        ul.links li a {
+            &:hover {
+                color: #333333; // Darker color for hover when sticky
+            }
+        }
     }
 
     ul {
