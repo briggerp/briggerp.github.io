@@ -73,20 +73,6 @@
                         }
                     }
                 }
-
-				
-				&.inactive {
-                    background-color: _palette(invert, fg);
-
-                    a {
-                        color: red;
-
-                        &:hover {
-                            color: _palette(invert, accent) !important;
-                        }
-                    }
-                }
-            }
         }
 
         &.icons {
