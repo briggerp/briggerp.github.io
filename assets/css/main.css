@@ -4756,7 +4756,7 @@ input, select, textarea {
 		bottom: 20px;
 		right: 20px;
 		background-color: #ffffff; /* Primary color */
-		color: #04071d; /* Text color */
+		color: #ffffff2d; /* Text color */
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
@@ -4790,7 +4790,7 @@ input, select, textarea {
 
 	/* Active Link Style */
 	#nav.sticky ul.links li.active a {
-		color: #000; /* Ensure active link color matches default */
+		color: #ffffff2d; /* Text color */
 	}
 
 
