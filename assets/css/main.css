@@ -4786,6 +4786,7 @@ input, select, textarea {
 	/* Styling Inactive Nav Links in Sticky Nav */
 	#nav.sticky ul.links li a.inactive {
 		color: #888; /* Light gray color for inactive links */
+		pointer-events: none; /* Disable hover and click events */
 	}
 	.mantra {
 		font-family: 'Georgia', serif;
