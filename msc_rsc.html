@@ -208,37 +208,23 @@
             var nav = document.getElementById('nav');
             var scrollToTopButton = document.getElementById('scrollToTopButton');
             var sticky = nav.offsetTop;
-            var navLinks = nav.querySelectorAll('.links li a');
-        
+
             window.onscroll = function() {
-                var scrollTop = window.pageYOffset;
-                var navOffset = nav.offsetTop;
-        
                 // Sticky nav functionality
-                if (scrollTop > navOffset) {
+                if (window.pageYOffset > sticky) {
                     nav.classList.add('sticky');
-                    // Update class of navigation links
-                    navLinks.forEach(function(link) {
-                        if (!link.parentNode.classList.contains('active')) {
-                            link.classList.add('inactive');
-                        }
-                    });
                 } else {
                     nav.classList.remove('sticky');
-                    // Remove inactive class from navigation links
-                    navLinks.forEach(function(link) {
-                        link.classList.remove('inactive');
-                    });
                 }
-        
+
                 // Scroll to top button functionality
-                if (scrollTop > 20) {
+                if (window.pageYOffset > 20) {
                     scrollToTopButton.style.display = 'block';
                 } else {
                     scrollToTopButton.style.display = 'none';
                 }
             };
-        
+
             // Smooth scroll to top when arrow is clicked
             scrollToTopButton.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -247,26 +233,9 @@
                     behavior: 'smooth'
                 });
             });
-        
-            // Add event listeners for each nav link to prevent default behavior
-            navLinks.forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault(); // Prevent default navigation behavior
-                    var targetId = this.getAttribute('href').substring(1); // Get target ID from href
-                    var targetElement = document.getElementById(targetId); // Find target element
-                    if (targetElement) {
-                        var offsetTop = targetElement.offsetTop - 4; // Adjust offset if needed
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
         });
-        
-        
-    </script>    
+    </script>
+ 
 
 </body>
 </html>

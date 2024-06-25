@@ -4783,32 +4783,14 @@ input, select, textarea {
 		z-index: 999; /* Increase the z-index value if necessary */
 	}
 	
-/* Styling Inactive Nav Links in Sticky Nav */
-#nav.sticky ul.links li a.inactive {
-    color: #888; /* Light gray color for inactive links */
-    pointer-events: auto; /* Allow clicks on inactive links */
-}
-
-	/* Hover Effect for Inactive Links */
-	#nav.sticky ul.links li a.inactive:hover {
-		color: #888; /* Ensure hover color matches inactive link color */
-		background-color: transparent; /* Adjust as needed */
+	/* Styling Inactive Nav Links in Sticky Nav */
+	#nav.sticky ul.links li a.inactive {
+		color: #888; /* Light gray color for inactive links */
 	}
 
 	/* Active Link Style */
 	#nav.sticky ul.links li.active a {
-		color: #ffffff2d; /* Active link color */
-	}
-
-	/* Hover Effect for Active Links */
-	#nav.sticky ul.links li.active a:hover {
-		color: _palette(invert, accent); /* Hover color for active link */
-	}
-
-	/* Ensure Hover Effect for Active Links Overrides Inactive Links */
-	#nav.sticky ul.links li a:hover {
-		color: inherit; /* Inherit hover color */
-		background-color: transparentize(_palette(invert, fg), 0.9); /* Background on hover */
+		color: #000; /* Ensure active link color matches default */
 	}
 
 
