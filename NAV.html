@@ -6,6 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .toggle-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            padding-left: 25px;
+            position: relative;
+        }
+        .toggle-button:before {
+            content: "+";
+            display: inline-block;
+            font-size: 24px;
+            color: #000;
+            position: absolute;
+            left: 0;
+        }
+        .toggle-button.active:before {
+            content: "-";
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .course-separator {
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+            padding-top: 10px;
+        }
+        .left-align-bullets ul {
+            list-style-position: inside;
+            padding-left: 0;
+            text-align: left; /* Ensure the text is left-aligned */
+        }
+        .start-align-bullets ul {
+            list-style-position: outside;
+            padding-left: 20px; /* Adjust padding to ensure bullets are visible */
+            text-align: left; /* Ensure the text is left-aligned */
+        }
+        .start-align-bullets li {
+            margin-left: 0; /* Ensure no extra margin is applied */
+            font-style: italic;
+        }        
+        p.no-margin-bottom {
+            margin-bottom: 1.0em; /* Remove bottom margin for the paragraph before the list */
+        }
+        .no-margin-bottom-list {
+            margin-bottom: 1.0em; /* Remove bottom margin for the list */
+        }
+        p.zero-margin-bottom {
+            margin-bottom: 0.0; /* Remove bottom margin for the paragraph before the list */
+        }
+        .no-margin-bottom-list-content {
+            margin-bottom: 0.0; /* Remove bottom margin for the list */
+        }
+        #scrollToTopButton {
+            display: none; /* Initially hide the button */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffffff; /* Primary color */
+            color: #04071d; /* Text color */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 24px;
+            line-height: 40px;
+            z-index: 1000; /* Ensure it's above other elements */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #scrollToTopButton:hover {
+            background-color: #868789; /* Darker shade of your primary color */
+        }        
+    </style>
 </head>
 <body class="is-preload">
     <!-- Wrapper -->
@@ -25,19 +109,6 @@
             </ul>
         </nav>
 
-        <!-- Main -->
-        <div id="main">
-            <!-- Menu -->
-            <div id="menu">
-                <a href="#about-me">About Me</a>
-                <a href="#academic-achievements">Academic Achievements</a>
-                <a href="#professional-experience">Professional Experience</a>
-            </div>
-            <!-- Featured Post -->
-        </div>
-
-
-    </div>
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
@@ -46,5 +117,41 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            button.classList.toggle("active");
+            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+        }
+    </script>
+    <!-- Scroll to top button -->
+    <a href="#" id="scrollToTopButton" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script>
+        // Scroll to top functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollToTopButton = document.getElementById('scrollToTopButton');
+
+            // Show the button when user scrolls down 20px from the top of the document
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            };
+
+            // Smooth scroll to top when arrow is clicked
+            scrollToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
