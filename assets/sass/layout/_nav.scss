@@ -17,20 +17,30 @@
     max-width: _size(wrapper);
     z-index: 2;
 
+    ul.links li a {
+        color: #0000002d; /* Text color */
+    }
+
     // Sticky navigation styles
     &.sticky {
         position: fixed;
         top: 4rem;
         left: 0;
         right: 0;
-        margin: 4rem auto 0 auto;
-        background: rgba(255, 255, 255, 1.0);
+        background: rgb(255, 255, 255);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 999; // Ensure it's above other elements
+        z-index: 999; // Increase the z-index value if necessary
+
         ul.links li a {
-            &:hover {
-                color: #333333; // Darker color for hover when sticky
-            }
+            color: #797979; /* Light gray color for inactive links */
+        }
+
+        ul.links li a.active {
+            color: #0000002d; /* Text color */
+        }
+
+        ul.links li a:hover {
+            color: #4a4a4a; /* Desired hover color for inactive links */
         }
     }
 

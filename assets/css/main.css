@@ -4772,35 +4772,6 @@ input, select, textarea {
 		background-color: #515151; /* Darker shade of your primary color */
 	}  
 
-	#nav ul.links li a {
-		color: #0000002d; /* Text color */
-	}
-	/* Sticky Navigation */
-	#nav.sticky {
-		position: fixed;
-		top: 4rem;
-		left: 0;
-		right: 0;
-		background: rgb(255, 255, 255);
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-		z-index: 999; /* Increase the z-index value if necessary */
-	}
-	
-	/* Styling Inactive Nav Links in Sticky Nav */
-	#nav.sticky ul.links li a.inactive {
-		color: #797979; /* Light gray color for inactive links */
-	}
-
-	/* Active Link Style */
-	#nav.sticky ul.links li a.active {
-		color: #0000002d; /* Text color */
-	}
-
-	/* Hover Effect for Inactive Links */
-	#nav.sticky ul.links li a.inactive:hover {
-		color: #555; /* Desired hover color for inactive links */
-	}
-
 	.mantra {
 		font-family: 'Georgia', serif;
 		font-size: 1.2em;
