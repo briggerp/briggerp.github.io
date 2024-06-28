@@ -4775,10 +4775,14 @@ input, select, textarea {
 	#nav ul.links li a {
 		color: #0000002d; /* Text color */
 	}
+	
+	#nav ul.links li a:hover {
+		color: inherit; /* Maintain current color or specify any other desired color */
+	}
 
 	/* Hover Effect for Inactive Links */
 	#nav.sticky ul.links li a:hover {
-		color: #555; /* Desired hover color for inactive links */
+		color: #191919; /* Desired hover color for inactive links */
 	}
 
 	/* Sticky Navigation */

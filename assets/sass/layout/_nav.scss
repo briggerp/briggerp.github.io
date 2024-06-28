@@ -33,14 +33,10 @@
 
         ul.links li a {
             color: #797979; /* Light gray color for inactive links */
-        }
 
-        ul.links li a.active {
-            color: #ff0808; /* Text color */
-        }
-
-        ul.links li a:hover {
-            color: #4a4a4a; /* Desired hover color for inactive links */
+            &:hover{
+                color: #191919;
+            }
         }
     }
 
