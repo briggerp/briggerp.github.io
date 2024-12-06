@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MSc Robotics, Systems and Control</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+        
+        <!-- Header -->
+        <header id="header">
+            <!-- <a href="about_me.html" class="logo">Me</a> -->
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="academic_achievements.html">Academic Achievements</a></li>
+                <li class="active"><a href="professional_experience.html">Professional Experience</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2>Professional Experience</h2>
+					<p>The professional experience I have gained has made me an independent, disciplined worker with a strong curiosity to learn and acquire new skills. It has honed my organizational, leadership, and communicational abilities. Below are my experiences:</p>	
+				</header>
+				
+                <section class="section">
+                    <h3>Corporate Experience</h3>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Robotics Internship - ROSEN Technology AG</div>
+                        <div class="toggle-content left-align-bullets">
+							<ul>
+								Full-time from September-December 2021
+                                <li>Implemented <strong>model-based design</strong> workflow for inline pipeline inspection robots. CAD model of robot can be tested in simulation to determine flaws and optimization potential before building hardware prototype.</li>
+                                <li><strong>Programming</strong> experience gained in: Solidworks, MSC Adams, Matlab Simulink, Matlab Simscape.</li>
+								<li><a href="documents/zeugnis_rosen.pdf" target="_blank">Certificate of employment</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Tennis Teacher - fb Tennisschule</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+								Part-time from 2014-2022
+                                <li>Planning and <strong>teaching</strong> of juniors tennis lessons. Organizing and running summer tennis camps.</li>
+                                <li><strong>Leadership</strong>, <strong>communicational</strong> and <strong>organizational</strong> skills acquired</li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Tennis Stringer - Self-employed</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+								Part-time from 2014-present
+                                <li>Tennis racket <strong>stringing</strong> from players at my local tennis club.</li>
+                                <li><strong>Negotiation</strong> and organizational skills with clients.</li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Swiss Military Service</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+								Full-time from July-November 2017, part-time from 2018-2024
+                                <li>Airplane soldier: Mission planning for helicopters and mission communication.</li>
+								<li>Learned <strong>Aviation English</strong> to communicate with pilots during missions. Dealt with <strong>stress management</strong>. Experienced superiority of a well-functioning, disciplined <strong>unit</strong> over an individual</li>
+                                <li>Completed all service days in 2024.</li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Workshop Internship - Haslimann Aufzüge AG</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+								Full-time from June-July 2018
+                                <li>Learned how to assemble and manufacture elevators.</li>
+								<li>Acquired <strong>practical skills</strong> such as milling, lathe turning and welding.</li>
+							</ul>
+                        </div>
+                    </div>
+				</section>
+				<section class="section">
+                    <h3>Academic Experience</h3>
+					<div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Teaching Assistant - ETH Zurich</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+								Part-time from 2019-2022
+                                <li>Teaching assistant in Analysis III, Control Systems II and Engineering Materials & Production I</li>
+								<li>Responsible for preparing and teaching exercise lessons for students.</li>
+								<li><strong>Organizational</strong> skills, <strong>time-management</strong>, <strong>teaching</strong> skills acquired. Learned how to structure and convey complex concepts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            button.classList.toggle("active");
+            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+        }
+    </script>
+    <!-- Scroll to top button -->
+    <a href="#" id="scrollToTopButton" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var nav = document.getElementById('nav');
+            var scrollToTopButton = document.getElementById('scrollToTopButton');
+            var sticky = nav.offsetTop;
+            var navLinks = nav.querySelectorAll('.links li a');
+    
+            window.onscroll = function() {
+                var scrollTop = window.pageYOffset;
+    
+                // Sticky nav functionality
+                if (scrollTop > sticky) {
+                    nav.classList.add('sticky');
+                    // Update class of navigation links
+                    navLinks.forEach(function(link) {
+                        if (!link.parentNode.classList.contains('active')) {
+                            link.classList.add('inactive');
+                        }
+                    });
+                } else {
+                    nav.classList.remove('sticky');
+                    // Remove inactive class from navigation links
+                    navLinks.forEach(function(link) {
+                        link.classList.remove('inactive');
+                    });
+                }
+    
+                // Scroll to top button functionality
+                if (scrollTop > 20) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            };
+    
+            // Smooth scroll to top when arrow is clicked
+            scrollToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>  
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-870L33LT22"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-870L33LT22');
+	</script>  
+</body>
+</html>

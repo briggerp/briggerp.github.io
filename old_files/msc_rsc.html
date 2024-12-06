@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MSc Robotics, Systems and Control</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+        
+        <!-- Header -->
+        <header id="header">
+            <!-- <a href="about_me.html" class="logo">Me</a> -->
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="about_me.html">About Me</a></li>
+                <li class="active"><a href="academic_achievements_.html">Academic Achievements</a></li>
+                <li><a href="professional_experience.html">Professional Experience</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2>MSc Robotics, Systems and Control</h2>
+                    <p class="no-margin-bottom">I decided to specialize in Robotics, Systems and Control at ETH Zurich for my Master's because of my passion for the field, inspired by my focus project during my Bachelor's. I started my degree with a mind-opening and very enriching exchange semester at the National University of Singapore. With my degree, I acquired theoretical knowledge and practical implementation experience in the following areas:</p>
+                        <div class="start-align-bullets">
+                            <ul class="no-margin-bottom-list"><li>Programming: Python, C++, Matlab, LabView, ROS/ROS2, Git, LaTeX</li>
+                                <li>Control Theory: Model-based control (MPC, LQR), data-driven control (DeePC), reinforcement learning-based control, adaptive control</li>
+                                <li>State Estimation: Kalman filter, particle filter, SLAM</li>
+                                <li>Dynamic Programming: Policy and value iteration, Markov Decision Processes</li>
+                                <li>Path Planning: Single-agent and multi-agent planning</li>
+                                <li>Machine Learning: Supervised and unsupervised learning techniques</li></ul>
+                        </div>
+                        <!-- Throughout my degree, I enhanced my programming skills in Python, C++, Matlab, LabView, ROS/ROS2 and git. I also learned to use optimization libraries such as cvxpy to formulate model-based and data-based controllers such as MPC or DeePC. I started exploring machine learning with libraries like PyTorch and TensorFlow to control a motorized labyrinth game in my semester project. 
+                        I implemented policy and value iteration as well as learned what a Markov Decision Process is, laying the ground for the realm of reinforcement learning. I implemented an extended Kalman filter and particle filter, and learned what SLAM is.  -->
+                    <p class="zero-margin-bottom">View my Master's transcript <a href="documents/Masters_Transcript.pdf" target="_blank">here</a>. Below are the projects I worked on in the courses of my Master's degree.</p>
+                </header>
+                <section class="section">
+                    <h3>National University of Singapore</h3>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Autonomous Robot Systems</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul class="no-margin-bottom-list-content">
+                                <li>Knowledge acquired in: <strong>State estimation</strong>, <strong>control systems theory</strong>, <strong>path planning</strong> and <strong>robot dynamics</strong>. <strong>Programming</strong> with Python and ROS.</li>
+                                <li>Implemented Theta* path planning, bi-directional motion control and spline trajectory generation in Python for TurtleBot3 robot <a href="documents/EE4308_Report.pdf" target="_blank"><strong>group project</strong></a>.</li>
+                                <li>Implemented Extended Kalman Filter, finite state machine logic and PID controller in Python for hector drone <a href="documents/EE4308_Project2.pdf" target="_blank"><strong>group project</strong></a>.</li>
+                                <li>See video of turtlebot driving through maze below:</li>
+                            </ul>
+                            <video width="520" height="315" controls>
+                                <source src="images/turtle_video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Adaptive Control Systems</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul class="no-margin-bottom-list-content">
+                                <li>Knowledge acquired in: <strong>Lyapunov-based direct adaptive control</strong>, <strong>self-tuning regulator</strong>, <strong>model reference adaptive control</strong>, <strong>variable structure control</strong> </li>
+                                <li>Implemented adaptive and sliding controllers in Matlab to control a simulated DC motor. See my <strong>project reports</strong> here:
+                                    <a href="documents/EE5104_CA1.pdf" target="_blank">Project 1</a>,
+                                    <a href="documents/EE5104_CA2.pdf" target="_blank">Project 2</a>,
+                                    <a href="documents/EE5104_CA3.pdf" target="_blank">Project 3</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Control Systems Design and Simulation</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul class="no-margin-bottom-list-content">
+                                <li>Knowledge acquired in: <strong>System modeling</strong>, <strong>non-parametric</strong> and <strong>parametric system identification</strong>, simulation, controller design and implementation.</li>
+                                <li>Implemented <a href="documents/EE4307_Project2.pdf" target="_blank"><strong>project</strong></a> in Matlab. </li>
+                                    <!-- <a href="documents/EE4307_Project1.pdf" target="_blank">Project 1</a>, -->
+                                    <!-- <a href="documents/EE4307_Project2.pdf" target="_blank">Project 2</a>.</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3>ETH Zurich</h3>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Master Thesis: Data preconditioning for data-driven predictive control in urban traffic control</div>
+                        <div class="toggle-content">
+                            <p class="zero-margin-bottom">
+                                My Master's thesis focused on reducing traffic congestion in cities, by using the <strong>Data-EnablEd Predictive Control (DeePC)</strong> algorithm to dynamically control traffic lights. Because urban traffic networks are nonlinear, the basic DeePC control approach is ill-suited for changing traffic conditions. In my thesis, I enhanced the controller performance in changing traffic conditions by developing a data-switching methodology that adapts the data used in the controller to the current traffic conditions. <a href="documents/Master_Thesis.pdf" target="_blank">See my report</a> for more details. I am currently still working on publishing a conference paper of our research findings. My research project was part of the <strong>REAL initiative</strong> of NCCR Automation, where I regularly presented my findings to a group of graduate students. In doing so, I enhanced my presentation skills and learned how to convey information concisely to diverse audiences. Learn more about the <a href="https://www.real-lab.ch/" target="_blank">REAL initiative here</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Semester Project: Imitation Learning</div>
+                        <div class="toggle-content">
+                            <p>
+                                For my semester project, I developed a neural network to control a motorized labyrinth game by imitating a Model-Predictive Control (MPC) expert. This <strong>imitation learning</strong> approach allowed for higher bandwidth control with a similar success rate. Through this project, I gained experience with <strong>machine learning</strong> libraries such as <strong>PyTorch</strong> and <strong>TensorFlow</strong>, and furthered my knowledge of <strong>ROS2</strong>. 
+                                Read my report for more details: <a href="documents/Semester_Project_Brio_Labyrinth.pdf" target="_blank">Semester project report</a>. Watch the video below to see the motorized labyrinth game guide the ball from start to finish.
+                            </p>
+                            <video width="520" height="315" controls>
+                                <source src="images/SUCCESS.MOV" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Physical Human Robot Interaction</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+                                <li>Knowledge acquired in: <strong>Kinematics</strong>, <strong>sensors</strong> and <strong>actuators</strong> for <strong>human-robot interaction systems</strong>, <strong>impedance</strong>, <strong>admittance</strong> and <strong>force control</strong> strategies for interaction, <strong>haptic rendering</strong> and human <strong>safety</strong> aspects.</li>
+                                <li>Implemented virtual wall with haptic paddle using an admittance controller programmed in <strong>LabVIEW</strong>. See the video below to see the virtual wall appear once the paddle reaches an angle of fifteen degrees.</li>
+                            </ul>
+                            <video width="210" height="315" controls>
+                                <source src="images/Virtual_mass_M_10.MOV" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Computational Control</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul class="no-margin-bottom-list-content">
+                                <li>Knowledge acquired in: PID, LQR, <strong>Model Predictive Control</strong> (MPC), </strong>Reinforcement Learning</strong>, <strong>Data-Driven Control</strong>, <strong>Markov Decision Processes</strong>.</li>
+                                <li>Implemented <a href="documents/COCO_Project_2023.pdf" target="_blank"><strong>autonomous rocket landing</strong></a> in gym simulation environment with Python. PID, MPC and Data-Enabled Predictive Control (DeePC) were implemented.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Path Planning and Decision Making for Autonomous Robots</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul>
+                                <li>Knowledge acquired in: <strong>Discrete planning</strong> and <strong>shortest path problems</strong>, steering methods, sampling-based methods, multi-agent planning, planning under uncertainty and collision checking.</li>
+                                <li>Implemented many mini-projects in Python. Use of optimization libraries like cvxpy. <strong>Multi-agent planning and control</strong> of multi-agent autonomous vehicles. The video shows the agents autonomously drive to their destinations. Re-planning happens when the agents are on a collision course.</li>
+                            </ul>
+                            <video width="520" height="315" controls>
+                                <source src="images/cars_video.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Dynamic Programming and Optimal Control</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul class="no-margin-bottom-list-content">
+                                <li>Knowledge acquired in: <strong>Dynamic Programming Algorithm</strong>, <strong>policy</strong> and <strong>value iteration</strong>, shortest path problems, infinite horizon problems, Bellman Equation, deterministic-continuous-time optimal control and <strong>Markov Decision Processes</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Model Predictive Control</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul class="no-margin-bottom-list-content">
+                                <li>Knowledge acquired in: Optimal control theory, optimization, <strong>theoretical properties</strong> of MPC, receding-horizon control MPC, tracking and offset-free control of constrained systems, <strong>robust MPC</strong></li>
+                                <li>Implemented MPC for approaching stage of an orbital rendezvous maneuver of a satellite in <strong>programming project</strong> in Matlab.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Vision Algorithms for Mobile Robotics</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul class="no-margin-bottom-list-content">
+                                <li>Knowledge acquired in: Image formation, filtering, feature extraction, multiple view geometry, dense reconstruction, tracking, image retrieval, event-based vision, visual-inertial odometry, <strong>Simultaneous Localization And Mapping</strong> (SLAM) and deep learning.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-separator">
+                        <div class="toggle-button" onclick="toggleContent(this)">Recursive Estimation</div>
+                        <div class="toggle-content left-align-bullets">
+                            <ul class="no-margin-bottom-list-content">
+                                <li>Knowledge acquired in: Bayes' theorem, Bayesian tracking, Kalman filter, <strong>extended Kalman filter</strong>, <strong>particle filter</strong>, <strong>observer-based control</strong>.</li>
+                                <li>Implemented extended Kalman filter and particle filter in <strong>programming exercise</strong> in Python. Exercise was to estimate position, velocity, orientation and length of an autonomous vehicle from GPS, compass and tachometer measurements. Dealt with missing GPS signals for indoor settings and large uncertainty in compass measurements. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+
+
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            button.classList.toggle("active");
+            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+        }
+    </script>
+    <!-- Scroll to top button -->
+    <a href="#" id="scrollToTopButton" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var nav = document.getElementById('nav');
+            var scrollToTopButton = document.getElementById('scrollToTopButton');
+            var sticky = nav.offsetTop;
+            var navLinks = nav.querySelectorAll('.links li a');
+    
+            window.onscroll = function() {
+                var scrollTop = window.pageYOffset;
+    
+                // Sticky nav functionality
+                if (scrollTop > sticky) {
+                    nav.classList.add('sticky');
+                    // Update class of navigation links
+                    navLinks.forEach(function(link) {
+                        if (!link.parentNode.classList.contains('active')) {
+                            link.classList.add('inactive');
+                        }
+                    });
+                } else {
+                    nav.classList.remove('sticky');
+                    // Remove inactive class from navigation links
+                    navLinks.forEach(function(link) {
+                        link.classList.remove('inactive');
+                    });
+                }
+    
+                // Scroll to top button functionality
+                if (scrollTop > 20) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            };
+    
+            // Smooth scroll to top when arrow is clicked
+            scrollToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>   
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-870L33LT22"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-870L33LT22');
+	</script> 
+</body>
+</html>
