@@ -725,7 +725,7 @@ header.major > .date:after {
         color: coral;
     }
 }
-
+/* 
 @media screen and (max-width: 480px) {
 
     #main {
@@ -735,9 +735,8 @@ header.major > .date:after {
     html {
         font-size: 8px;
     }
+} */
 
-
-}
 /* Media Query for screen sizing */
 
     /* @media screen and (max-width: 1680px) {
