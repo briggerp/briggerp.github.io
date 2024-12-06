@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link href="assets/css/index.css" rel="stylesheet" />
+</head>
+
+<body class="grid">
+
+	<div class="background-container">
+		<div class="container">
+
+			<header>
+				<nav class="menu normal" id="nav-header">
+					<ul>
+						<li><a class="link-view" href="NEW_index.html" title="Go to Home">Home</a></li>
+						<li><a class="link-view" href="msc_rsc.html" title="Go to MSC"><span class="short-text">MSc</span><span class="full-text">MSc Robotics, Systems, Control</span></a></li>
+						<li><a class="link-view" href="bsc_mecheng.html" title="Go to BSC"><span class="short-text">BSc</span><span class="full-text">BSc Mechanical Engineering</span></a></li>
+						<li><a class="link-view" href="professional_experience.html" title="Go to Professional Experiences">Professional Experience</a></li>
+						<li class="active"><a class="link-view" href="about_me.html" title="Stay at About Me">About Me</a></li>							
+					</ul>
+				</nav>
+
+			</header>
+
+			<main id="main">
+				<article class="post featured">
+					<header class="major">
+						<h2>About Me</h2>
+						<p>I was born in the USA and went to elementary school there.
+							When I was twelve years old, my family moved back to Switzerland where I pursued a Matura with a focus on applied maths and physics.
+							
+							and raised between Switzerland and Florida, my journey has been a blend of diverse experiences and cultures. I have a strong passion for robotics and believe robotics has huge potential to make our lives better, safer and easier. Outside of my studies, I love to do sports, play the piano or the guitar and engage in card games with friends and family. I enjoy spending time in nature and discovering new cultures through traveling. In short, I am a very optimistic, upbeat individual who loves cultural diversity and discovering the unknown. To learn more about my academic and professional experience, click on the <a href="academic_achievements.html">Academic Achievements</a> or <a href="professional_experience.html">Professional Experience</a> menu tab. Below are my greatest passions aside from robotics:</p>
+					</header>
+				</article>
+				
+			<!-- Posts -->
+				<section class="posts">
+					<article>
+						<header>
+							<h2><a href="tennis.html">Tennis Enthusiast</a></h2>
+						</header>
+						<a href="tennis.html" class="image fit"><img class="media-sizing-special-2" src="images/tennis_NUS.JPG" alt="" /></a>
+						<a href="tennis.html" class="button">Read More</a>
+					</article>
+					<article>
+						<header>
+							<h2><a href="globetrotter.html">Globetrotter</a></h2>
+						</header>
+						<a href="globetrotter.html" class="image fit"><img class="media-sizing-special-2" src="images/cappadocia_first_morning.jpg" alt="" /></a>
+						<a href="globetrotter.html" class="button">Read More</a>
+					</article>
+					<article>
+						<header>
+							<h2><a href="musician.html">Musician</a></h2>
+						</header>
+						<a href="musician.html" class="image fit"><img class="media-sizing-special-2" src="images/piano_pic_close.JPG" alt="" /></a>
+						<a href="musician.html" class="button">Read More</a>
+					</article>
+					<article>
+						<header>
+							<h2><a href="nature_explorer.html">Nature Explorer</a></h2>
+						</header>
+						<a href="nature_explorer.html" class="image fit"><img class="media-sizing-special-2" src="images/koala.jpg" alt="" /></a>
+						<a href="nature_explorer.html" class="button">Read More</a>
+					</article>
+				</section>
+
+			</main>
+
+			<footer>
+				<p>Contact me:</p>
+				<nav class="menu" id="nav-footer">
+					<ul>
+						<li>Email: <a>philippe@brigger.com</a></li>
+						<li>Telephone: +41 79 370 39 15</li>
+						<li>LinkedIn: <a title="Go to LinkedIn" class="link-view" href="www.linkedin.com/in/philippe-brigger">philippe.brigger</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</div>
+	</div>
+
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            button.classList.toggle("active");
+            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
