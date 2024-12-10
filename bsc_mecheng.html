@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link href="resources/css/index.css" rel="stylesheet" />
+</head>
+
+<body class="background-container">
+
+	<div class="grid">
+        <header>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html" title="Stay at Home">Home</a></li>
+                    <li><a href="msc_rsc.html" title="Go to MSC">MSc Robotics, Systems, Control</a></li>
+                    <li class="active"><a href="bsc_mecheng.html" title="Go to BSC">BSc Mechanical Engineering</a></li>
+                    <li><a href="professional_experience.html" title="Go to Professional Experience">Professional Experience</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="normal">				
+        <h2 class="main-h1"><span class="short-text">BSc</span><span class="full-text">Bachelor of Science</span> in Mechanical Engineering</h2>
+        <p class="main-p">
+            I graduated in the top two percentile of my class with a GPA of 5.54. View my 
+            <a class="link-view" href="resources/documents/Bachelors_Transcript.pdf" target="_blank">Bachelor's transcript</a>,
+            <a class="link-view" href="resources/documents/Diploma.pdf" target="_blank"> graduation diploma</a> and
+            <a class="link-view" href="resources/documents/Statistics.pdf" target="_blank"> graduation statistics</a> here. Below are the main projects I did during my Bachelor's degree.
+        </p>
+            <section class="section">
+                <h3>Focus Project Griffin</h3>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Project Info</div>
+                    <div class="toggle-content left-align-bullets">
+                        <p class="no-margin-bottom">In the third year of my Bachelor's, I participated in the Focus Project Griffin. Over the course of a year, our team of eight built an <strong>aerial manipulator</strong> with a parallel robotic arm from the ground up. My major learnings and contributions were:</p>
+                        <ul class="no-margin-bottom-list-content">
+                            <li><strong>Startup thinking</strong>: Project pitches, fund acquisition, development of strategy and vision, quick and effective prototyping</li>
+                            <li><strong>Leadership</strong>: Project <strong>team lead</strong> and management</li>
+                            <li><strong>System modeling & control</strong></li>
+                            <li><strong>Programming</strong>: C++, Python, ROS, CAD, Gazebo, LaTeX</li>
+                            <li><strong>Practical skills</strong>: 3D printing, lasercutting, wire soldering, motor tuning, drone assembly</li>
+                        </ul>
+                        <p style="text-align: left;" class="zero-margin-bottom">Visit our project <a class="link-view" href="https://griffin.ethz.ch/index.php" target="_blank">website</a> for more details.</p>
+                        <br>
+                        <img class="media-sizing" src="resources/images/prismav_white_Studio.PNG" alt="aerial manipulator with integrated robot arm" />
+                    </div>
+                </div>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Conference Paper</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul class="no-margin-bottom-list-content">
+                            <li>Publication of <a class="link-view" href="https://ieeexplore.ieee.org/document/10156414" target="_blank">conference paper</a> at International Conference on Unmanned Aerial Systems (ICUAS)</li>
+                            <li>Awarded <a class="link-view" href="resources/documents/Best_Paper_Award_Certificate.pdf" target="_blank">Best Paper</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Aerial Manipulation</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul class="no-margin-bottom-list-content">
+                            <li>Aerial manipulator combines <strong>omnidirectional floating base</strong> with a <strong>parallel robot arm</strong></li>
+                            <li>Coaxial tiltable propeller groups enable flight in any pose</li>
+                            <li>Robot arm compensates positional error of floating base</li>
+                            <li>Object grasp with adaptive fingers</li>
+                        </ul>
+
+                        <p style="text-align: left;">See PrisMAV do </strong>aerial manipulation missions</strong> in the videos below:</p>
+                        <br>
+                        <iframe class="media-sizing" src="https://www.youtube.com/embed/6QirjDjgCOU" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="media-sizing" src="https://www.youtube.com/embed/-OoUsadBrYI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Focus Rollout</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul>
+                            <li>Project <strong>presentation</strong> at Focus Rollout:</li>
+                        </ul>
+                        <br>
+                        <iframe class="media-sizing" src="https://www.youtube.com/embed/pK2XYTjVoa8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                
+                <h3>Bachelor Thesis & Innovation Project</h3>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Bachelor Thesis</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul class="no-margin-bottom-list-content">
+                            <li><strong>Object detection and grasp planning pipeline</strong> <a class="link-view" href="resources/documents/BT_object_detection.pdf" target="_blank">thesis</a> for aerial manipulator from focus project</li>
+                            <li>Knowledge acquired with <strong>OpenCV</strong>, Python, Gazebo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Innovation Project</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul>
+                            <li>Developed <strong>catapulting robot</strong> with four other students</li>
+                            <li><strong>CAD</strong>, <strong>lasercutting</strong> and <strong>LabView</strong> skills acquired</li>
+                            <li><strong>Teamwork</strong> and project <strong>planning</strong></li>
+                            <li>See the robot autonomously load and shoot object into bin:</li>
+                        </ul>
+                        <br>
+                        <video class="media-sizing-special" controls>
+                            <source src="resources/images/catapult_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Contact me:</p>
+            <nav id="nav-footer">
+                <ul>
+                    <li>Email: <a>philippe@brigger.com</a></li>
+                    <li>Telephone: +41 79 370 39 15</li>
+                    <li>LinkedIn: <a title="Go to LinkedIn" class="link-view" href="https://www.linkedin.com/in/philippe-brigger">philippe.brigger</a></li>
+                </ul>
+            </nav>
+        </footer>
+	</div>
+
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            button.classList.toggle("active");
+            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

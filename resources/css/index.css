@@ -45,6 +45,10 @@ body{
 
 /* Header Styling */
 header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    margin-top: 0;
     grid-area: header;
     width: 60%;
     /* height: 100%; */
@@ -113,6 +117,16 @@ main {
     justify-self: center;
     justify-items: center;
     width: 60%;
+    background-color: white;
+    text-align: center;
+}
+
+main.home {
+    background-color: transparent;
+}
+
+main.normal {
+    padding: 2rem 8rem 2rem 8rem ; 
 }
 
 main.home h1 {
@@ -145,9 +159,79 @@ main.home p {
     text-align: center;
 }
 
+/* Separate courses */
+.section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.course-separator {
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+    padding-top: 10px;
+}
+
+/* Toggle courses */
+.toggle-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 25px;
+    position: relative;
+    margin-top: 0.8rem;
+}
+.toggle-button:before {
+    content: "+";
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #000;
+    position: absolute;
+    left: 0;
+}
+.toggle-button.active:before {
+    content: "-";
+}
+.toggle-content {
+    display: none;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;   
+}
+.left-align-bullets ul {
+    list-style-position: outside;
+    padding-left: 18px;
+    line-height: 1.1rem;
+    text-align: left; /* Ensure the text is left-aligned */
+}
+
+/* Shorten text when window width is too small */
+.short-text {
+    display: none;
+}
+
 /* Footer Styling */
 footer {
     grid-area: footer;
     width: 60%;
+}
+
+/* Media Styling */
+.media-sizing {
+    width: 15rem;
+    height: auto;
+}
+.media-sizing-special {
+    width: 10rem;
+    height: auto;
+}
+
+.media-sizing-special-2 {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
 }
 

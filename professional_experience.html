@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link href="resources/css/index.css" rel="stylesheet" />
+</head>
+
+<body class="background-container">
+
+	<div class="grid">
+        <header>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html" title="Stay at Home">Home</a></li>
+                    <li><a href="msc_rsc.html" title="Go to MSC">MSc Robotics, Systems, Control</a></li>
+                    <li><a href="bsc_mecheng.html" title="Go to BSC">BSc Mechanical Engineering</a></li>
+                    <li class="active"><a href="professional_experience.html" title="Go to Professional Experience">Professional Experience</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="normal">
+            
+            <h2 class="main-h1">Professional Experience</h2>
+            <p class="main-p">The professional experience I have gained has made me an independent, disciplined worker with a strong curiosity to learn and acquire new skills. I have gained strong organizational, leadership, and communicational abilities. See my experiences below.</p>	
+
+            
+            <section class="section">
+                <h3>Corporate Experience</h3>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Software Engineering Internship - getAbstract</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul>
+                            <li>Involvement in full stack company projects.</li>
+                            <li>Programming experience gained in: HTML, CSS, JavaScript, SQL</li>
+                            <li>Duration: Full-time from December 2024 to January 2025</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Robotics Internship - ROSEN Technology AG</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul>
+                            <li>Implemented <strong>model-based design</strong> workflow for inline pipeline inspection robots. CAD model of robot can be tested in simulation to determine flaws and optimization potential before building hardware prototype.</li>
+                            <li><strong>Programming</strong> experience gained in: Solidworks, MSC Adams, Matlab Simulink, Matlab Simscape.</li>
+                            <li><a href="resources/documents/zeugnis_rosen.pdf" target="_blank">Certificate of employment</a>.</li>
+                            <li>Duration: Full-time from September-December 2021</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Tennis Teacher - fb Tennisschule</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul>
+                            <li>Planning and <strong>teaching</strong> of juniors tennis lessons. Organizing and running summer tennis camps.</li>
+                            <li><strong>Leadership</strong>, <strong>communicational</strong> and <strong>organizational</strong> skills acquired</li>
+                            <li>Duration: Part-time from 2014-2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Tennis Stringer - Self-employed</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul>
+                            <li>Tennis racket <strong>stringing</strong> from players at my local tennis club.</li>
+                            <li><strong>Negotiation</strong> and organizational skills with clients.</li>
+                            <li>Duration: Part-time from 2014-2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Swiss Military Service</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul>
+                            <li>Airplane soldier: Mission planning for helicopters and mission communication.</li>
+                            <li>Learned <strong>Aviation English</strong> to communicate with pilots during missions. Dealt with <strong>stress management</strong>. Experienced superiority of a well-functioning, disciplined <strong>unit</strong> over an individual</li>
+                            <li>Completed all service days in 2024.</li>
+                            <li>Duration: Full-time from July-November 2017, part-time from 2018-2024</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Workshop Internship - Haslimann Aufzüge AG</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul>
+                            <li>Learned how to assemble and manufacture elevators.</li>
+                            <li>Acquired <strong>practical skills</strong> such as milling, lathe turning and welding.</li>
+                            <li>Duration: Full-time from June-July 2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <h3>Academic Experience</h3>
+                <div class="course-separator">
+                    <div class="toggle-button" onclick="toggleContent(this)">Teaching Assistant - ETH Zurich</div>
+                    <div class="toggle-content left-align-bullets">
+                        <ul>
+                            <li>Teaching assistant in Analysis III, Control Systems II and Engineering Materials & Production I</li>
+                            <li>Responsible for preparing and teaching exercise lessons for students.</li>
+                            <li><strong>Organizational</strong> skills, <strong>time-management</strong>, <strong>teaching</strong> skills acquired. Learned how to structure and convey complex concepts</li>
+                            <li>Duration: Part-time from 2019-2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- <p>Contact me:</p>
+            <nav id="nav-footer">
+                <ul>
+                    <li>Email: <a>philippe@brigger.com</a></li>
+                    <li>Telephone: +41 79 370 39 15</li>
+                    <li>LinkedIn: <a title="Go to LinkedIn" class="link-view" href="https://www.linkedin.com/in/philippe-brigger">philippe.brigger</a></li>
+                </ul>
+            </nav> -->
+        </footer>
+
+	</div>
+
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            button.classList.toggle("active");
+            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+        }
+    </script>
+    <!-- <script>
+        fetch('partials/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script> -->
+</body>
+</html>
