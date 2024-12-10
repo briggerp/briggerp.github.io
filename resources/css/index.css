@@ -9,19 +9,40 @@
 
 html {
     font-size: 16px;
+    background-color: #203346;
+    background-image: url("../images/oeschinesee_cropped_3.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-position: top left; */
+    background-size: cover;
+    height: 100vh;
 }
 
 /* General background image */
 .background-container {
     background-image: url("../images/oeschinesee_cropped_3.jpg");
     background-repeat: no-repeat;
-    background-position: top left;
+    /* background-position: top left; */
     background-size: cover;
     height: 100vh;
 }
 
 /* Grid container */
 .grid {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 100vh;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.grid-home {
     display: grid;
     grid-template-areas:
         "header header header header"
@@ -40,7 +61,6 @@ html {
 body{
     padding: 0;
     margin: 0;
-    background: none;
 }
 
 /* Header Styling */
@@ -135,10 +155,11 @@ main.home h1 {
     font-family: "Garamond";
     line-height: 1.1;
     letter-spacing: 0.075em;
-    margin-top: 53vh;
+    margin-top: 43vh;
     color: rgb(252, 249, 245);
     text-transform: uppercase;
 }
+
 main.home h2 {
     font-size: 3.2rem;    
     font-weight: 900;
@@ -147,6 +168,21 @@ main.home h2 {
     letter-spacing: 0.075em;
     color: rgb(252, 249, 245);
     text-transform: uppercase;
+}
+main.normal h2 {
+    font-size: 2.5rem;
+    max-width: 90%;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+main.normal p {
+    font-size: 1rem;
+    max-width: 90%;
+    /* font-weight: 1; */
+    letter-spacing: 0.03em;
+    margin-bottom: 2rem;  
 }
 main.home p {
     font-size: 1.5rem;
