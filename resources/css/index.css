@@ -11,7 +11,7 @@ html {
     font-size: 16px;
     background-color: #203346;
     background-image: url("../images/oeschinesee_cropped_3.jpg");
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     /* background-position: top left; */
     background-size: cover;
     height: 100vh;
@@ -251,8 +251,22 @@ main.home p {
 
 /* Footer Styling */
 footer {
+    border-top: 1px solid grey;
+    padding: 1rem 5rem;
+    display: flex;
     grid-area: footer;
     width: 60%;
+    justify-content: left;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+}
+
+.footer-nav ul {
+    padding-left: 2rem;
+    list-style-type: none;
+
 }
 
 /* Media Styling */
