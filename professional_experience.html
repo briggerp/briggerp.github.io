@@ -109,27 +109,17 @@
         </main>
 
         <footer>
-            <!-- <p>Contact me:</p>
-            <nav id="nav-footer">
-                <ul>
-                    <li>Email: <a>philippe@brigger.com</a></li>
-                    <li>Telephone: +41 79 370 39 15</li>
-                    <li>LinkedIn: <a title="Go to LinkedIn" class="link-view" href="https://www.linkedin.com/in/philippe-brigger">philippe.brigger</a></li>
-                </ul>
-            </nav> -->
+            <p>Email: <a href="mailto:philippe@brigger.com">philippe@brigger.com</a></p>
+            <p>Telephone: <a href="tel:+41793703915">+41 79 370 39 15</a></p>
+            <p id="linkedin">LinkedIn: <a title="Go to LinkedIn" class="link-view" href="https://www.linkedin.com/in/philippe-brigger">philippe.brigger</a></p>
         </footer>
-
-	</div>
-
-    <footer>
-        <p>Contact me:</p>
-        <nav class="footer-nav">
-            <ul>
-                <li>Email: <a>philippe@brigger.com</a></li>
-                <li>Telephone: +41 79 370 39 15</li>
-                <li>LinkedIn: <a title="Go to LinkedIn" class="link-view" href="https://www.linkedin.com/in/philippe-brigger">philippe.brigger</a></li>
-            </ul>
-        </nav>
-    </footer>
+    </div>
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            button.classList.toggle("active");
+            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+        }
+    </script>
 </body>
 </html>

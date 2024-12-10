@@ -33,15 +33,17 @@
                 <div class="course-separator">
                     <div class="toggle-button" onclick="toggleContent(this)">Project Info</div>
                     <div class="toggle-content left-align-bullets">
-                        <p class="no-margin-bottom">In the third year of my Bachelor's, I participated in the Focus Project Griffin. Over the course of a year, our team of eight built an <strong>aerial manipulator</strong> with a parallel robotic arm from the ground up. My major learnings and contributions were:</p>
-                        <ul class="no-margin-bottom-list-content">
-                            <li><strong>Startup thinking</strong>: Project pitches, fund acquisition, development of strategy and vision, quick and effective prototyping</li>
+                        <p id="special-p">In the third year of my Bachelor's, I participated in the Focus Project Griffin. 
+                            Over the course of a year, our team of eight built an <strong>aerial manipulator</strong> with a parallel robotic arm from the ground up. 
+                            Major learnings and contributions:</p>
+                        <ul>
+                            <li><strong>Start-up thinking</strong>: Project pitches, fund acquisition, development of strategy and vision, quick and effective prototyping</li>
                             <li><strong>Leadership</strong>: Project <strong>team lead</strong> and management</li>
-                            <li><strong>System modeling & control</strong></li>
+                            <li><strong>System modeling & control</strong>: Flight controller, motor allocation, system dynamics</li>
                             <li><strong>Programming</strong>: C++, Python, ROS, CAD, Gazebo, LaTeX</li>
                             <li><strong>Practical skills</strong>: 3D printing, lasercutting, wire soldering, motor tuning, drone assembly</li>
                         </ul>
-                        <p style="text-align: left;" class="zero-margin-bottom">Visit our project <a class="link-view" href="https://griffin.ethz.ch/index.php" target="_blank">website</a> for more details.</p>
+                        <p style="text-align: left;" id="special-p2">Visit our project <a class="link-view" href="https://griffin.ethz.ch/index.php" target="_blank">website</a> for more details.</p>
                         <br>
                         <img class="media-sizing" src="resources/images/prismav_white_Studio.PNG" alt="aerial manipulator with integrated robot arm" />
                     </div>
@@ -49,7 +51,7 @@
                 <div class="course-separator">
                     <div class="toggle-button" onclick="toggleContent(this)">Conference Paper</div>
                     <div class="toggle-content left-align-bullets">
-                        <ul class="no-margin-bottom-list-content">
+                        <ul>
                             <li>Publication of <a class="link-view" href="https://ieeexplore.ieee.org/document/10156414" target="_blank">conference paper</a> at International Conference on Unmanned Aerial Systems (ICUAS)</li>
                             <li>Awarded <a class="link-view" href="resources/documents/Best_Paper_Award_Certificate.pdf" target="_blank">Best Paper</a></li>
                         </ul>
@@ -58,14 +60,14 @@
                 <div class="course-separator">
                     <div class="toggle-button" onclick="toggleContent(this)">Aerial Manipulation</div>
                     <div class="toggle-content left-align-bullets">
-                        <ul class="no-margin-bottom-list-content">
+                        <ul>
                             <li>Aerial manipulator combines <strong>omnidirectional floating base</strong> with a <strong>parallel robot arm</strong></li>
                             <li>Coaxial tiltable propeller groups enable flight in any pose</li>
                             <li>Robot arm compensates positional error of floating base</li>
                             <li>Object grasp with adaptive fingers</li>
                         </ul>
 
-                        <p style="text-align: left;">See PrisMAV do </strong>aerial manipulation missions</strong> in the videos below:</p>
+                        <p style="text-align: left;" id="special-p3">See PrisMAV do </strong>aerial manipulation missions</strong> in the videos below:</p>
                         <br>
                         <iframe class="media-sizing" src="https://www.youtube.com/embed/6QirjDjgCOU" frameborder="0" allowfullscreen></iframe>
                         <iframe class="media-sizing" src="https://www.youtube.com/embed/-OoUsadBrYI" frameborder="0" allowfullscreen></iframe>
@@ -88,7 +90,7 @@
                 <div class="course-separator">
                     <div class="toggle-button" onclick="toggleContent(this)">Bachelor Thesis</div>
                     <div class="toggle-content left-align-bullets">
-                        <ul class="no-margin-bottom-list-content">
+                        <ul>
                             <li><strong>Object detection and grasp planning pipeline</strong> <a class="link-view" href="resources/documents/BT_object_detection.pdf" target="_blank">thesis</a> for aerial manipulator from focus project</li>
                             <li>Knowledge acquired with <strong>OpenCV</strong>, Python, Gazebo</li>
                         </ul>
@@ -115,14 +117,9 @@
         </main>
 
         <footer>
-            <p>Contact me:</p>
-            <nav class="footer-nav">
-                <ul>
-                    <li>Email: <a>philippe@brigger.com</a></li>
-                    <li>Telephone: +41 79 370 39 15</li>
-                    <li>LinkedIn: <a title="Go to LinkedIn" class="link-view" href="https://www.linkedin.com/in/philippe-brigger">philippe.brigger</a></li>
-                </ul>
-            </nav>
+            <p>Email: <a href="mailto:philippe@brigger.com">philippe@brigger.com</a></p>
+            <p>Telephone: <a href="tel:+41793703915">+41 79 370 39 15</a></p>
+            <p id="linkedin">LinkedIn: <a title="Go to LinkedIn" class="link-view" href="https://www.linkedin.com/in/philippe-brigger">philippe.brigger</a></p>
         </footer>
 	</div>
 
