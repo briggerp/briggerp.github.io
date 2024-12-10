@@ -1,0 +1,153 @@
+/* General Styling */
+* {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #203346;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* General background image */
+.background-container {
+    background-image: url("../images/oeschinesee_cropped_3.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Grid container */
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 100vh;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+/* Header Styling */
+header {
+    grid-area: header;
+    width: 60%;
+    /* height: 100%; */
+}
+
+/* Header NAV */
+.header-nav {
+    display: flex;
+    width: 100%;
+    /* background-color: white; */
+}
+
+/* List Items Styling */
+.header-nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%; 
+    height: 10vh;
+    align-self: center;
+}
+
+.header-nav li {
+    display: flex;
+    flex: 1; 
+    align-self: center;
+    height: 100%;
+    justify-content: center;
+    background-color: rgb(200, 200, 200);
+}
+
+.header-nav li a {
+    text-decoration: none; 
+    text-align: center;
+    color: rgba(117,117,117,1.0);
+    align-self: center;
+}
+
+.header-nav li.active {
+    display: flex;
+    background-color: white;
+    height: 100%;
+    align-self: center;
+    justify-content: center;
+}
+
+.header-nav li.active a {
+    color: #203346;
+    text-align: center;
+}
+
+.header-nav li:hover {
+    display: flex;
+    flex: 1; 
+    text-align: center;
+    background-color: rgba(230, 230, 230, 1.0);
+}
+
+.header-nav li a:hover {
+    color: orange;
+}
+
+/* Main Styling */
+main {
+    grid-area: main;
+    align-self: center; /* To override align-items */
+    justify-self: center;
+    justify-items: center;
+    width: 60%;
+}
+
+main.home h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "Garamond";
+    line-height: 1.1;
+    letter-spacing: 0.075em;
+    margin-top: 53vh;
+    color: rgb(252, 249, 245);
+    text-transform: uppercase;
+}
+main.home h2 {
+    font-size: 3.2rem;    
+    font-weight: 900;
+    font-family: "Garamond";
+    line-height: 1.1;
+    letter-spacing: 0.075em;
+    color: rgb(252, 249, 245);
+    text-transform: uppercase;
+}
+main.home p {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(252, 249, 245);
+    margin-top: 2vh;
+    letter-spacing: 0.05em;
+    width: 80%;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    grid-area: footer;
+    width: 60%;
+}
+
