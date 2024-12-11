@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Portfolio</title>
 	<link href="resources/css/index.css" rel="stylesheet" />
+    <script src="resources/js_scripts/buttonToggler.js" async></script>
 </head>
 
 <body class="background-container">
@@ -182,13 +183,5 @@
             <p id="linkedin"><span class="short-text"></span><span class="full-text">LinkedIn: </span><a title="Go to LinkedIn" class="link-view" href="https://www.linkedin.com/in/philippe-brigger">philippe.brigger</a></p>
         </footer>
 	</div>
-
-    <script>
-        function toggleContent(button) {
-            const content = button.nextElementSibling;
-            button.classList.toggle("active");
-            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
-        }
-    </script>
 </body>
 </html>
