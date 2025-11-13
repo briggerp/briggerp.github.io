@@ -517,23 +517,66 @@ footer a:hover {
 
 /* Media Styling */
 
-.media-sizing {
-    width: auto;
+/* Media Styling */
+
+/* Images: keep intrinsic aspect ratio and scale responsively. Use object-fit for contained scaling. */
+img.media-sizing,
+img.media-sizing-special,
+img.media-sizing-special-2 {
+    width: 100%;
+    height: auto; /* preserve image aspect ratio */
+    max-width: 100%;
+    max-height: 20rem;
+    object-fit: contain;
+}
+
+/* Videos: keep a consistent aspect ratio for layout, scale responsively. */
+video.media-sizing {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 20rem;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+video.media-sizing-special {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 20rem;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+}
+
+video.media-sizing-special-2 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 20rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* Iframes (e.g., embedded YouTube) should behave like videos: keep a 16:9 container unless a special class is used */
+iframe.media-sizing {
+    width: 100%;
     height: auto;
     max-width: 100%;
     max-height: 20rem;
     aspect-ratio: 16 / 9;
 }
-.media-sizing-special {
-    width: auto;
+
+iframe.media-sizing-special {
+    width: 100%;
     height: auto;
     max-width: 100%;
     max-height: 20rem;
     aspect-ratio: 9 / 16;
 }
 
-.media-sizing-special-2 {
-    width: auto;
+iframe.media-sizing-special-2 {
+    width: 100%;
     height: auto;
     max-width: 100%;
     max-height: 20rem;
